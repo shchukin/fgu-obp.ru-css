@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Пропуск</title>
+        <meta name="description" content="[%description%]">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/app.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+
+        <div id="__nuxt">
+            <div id="__layout">
+                <div id="app" route="research" class="lo-tb">
+                    <svg fill="none" stroke="0" width="0" height="0" class="hidden app-svg-sprites" style="display:none">
+                        <symbol id="icon-chevron-left" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 11L3 6L8 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-chevron-right">
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.293 11.707a1 1 0 010-1.414L7.586 6 3.293 1.707A1 1 0 014.707.293l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" class="spr-fill-color"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-chevron-down" stroke="none">
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M.293 3.293a1 1 0 011.414 0L6 7.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z" class="spr-fill-color"></path>
+                            </g>
+                        </symbol>
+                        <symbol id="icon-cross" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L13 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                            <path d="M13 3L3 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol id="icon-eye-closed" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" stroke="none">
+                            <path d="M0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none"></path>
+                            <path
+                                d="M12 6c3.79 0 7.17 2.13 8.82 5.5-.59 1.22-1.42 2.27-2.41 3.12l1.41 1.41c1.39-1.23 2.49-2.77 3.18-4.53C21.27 7.11 17 4 12 4c-1.27 0-2.49.2-3.64.57l1.65 1.65C10.66 6.09 11.32 6 12 6zm-1.07 1.14L13 9.21c.57.25 1.03.71 1.28 1.28l2.07 2.07c.08-.34.14-.7.14-1.07C16.5 9.01 14.48 7 12 7c-.37 0-.72.05-1.07.14zM2.01 3.87l2.68 2.68C3.06 7.83 1.77 9.53 1 11.5 2.73 15.89 7 19 12 19c1.52 0 2.98-.29 4.32-.82l3.42 3.42 1.41-1.41L3.42 2.45 2.01 3.87zm7.5 7.5l2.61 2.61c-.04.01-.08.02-.12.02-1.38 0-2.5-1.12-2.5-2.5 0-.05.01-.08.01-.13zm-3.4-3.4l1.75 1.75c-.23.55-.36 1.15-.36 1.78 0 2.48 2.02 4.5 4.5 4.5.63 0 1.23-.13 1.77-.36l.98.98c-.88.24-1.8.38-2.75.38-3.79 0-7.17-2.13-8.82-5.5.7-1.43 1.72-2.61 2.93-3.53z"></path>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" id="icon-eye-opened" stroke="none">
+                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                            <path d="M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z"></path>
+                        </symbol>
+                        <symbol id="icon-otol" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3L8.27948 7.47174C8.41023 9.56367 7.12713 11.4992 5.15731 12.2155V12.2155C3.87005 12.6836 3 13.9118 3 15.2815V15.2815C3 16.8557 4.12581 18.2047 5.67463 18.4863L7.61682 18.8394C8.18456 18.9426 8.69237 19.2565 9.03859 19.7181V19.7181C9.64381 20.5251 10.5936 21 11.6023 21H12" stroke-width="2" stroke-linecap="round" class="spr-stroke-color"></path>
+                            <path d="M16 3L15.7205 7.47174C15.5898 9.56367 16.8729 11.4992 18.8427 12.2155V12.2155C20.1299 12.6836 21 13.9118 21 15.2815V15.2815C21 16.8557 19.8742 18.2047 18.3254 18.4863L16.3832 18.8394C15.8154 18.9426 15.3076 19.2565 14.9614 19.7181V19.7181C14.3562 20.5251 13.4064 21 12.3977 21H12" stroke-width="2" stroke-linecap="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol id="icon-facebook" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.2307 5.91304H17.5383C17.7931 5.91304 17.9999 5.71826 17.9999 5.47826V2.54913C17.9999 2.3213 17.8139 2.13174 17.573 2.11565C16.8387 2.06652 15.4042 2 14.3727 2C11.5384 2 9.69227 3.6 9.69227 6.50783V9.3913H6.46153C6.20677 9.3913 6 9.58609 6 9.82609V12.8696C6 13.1096 6.20677 13.3043 6.46153 13.3043H9.69227V21.5652C9.69227 21.8052 9.89904 22 10.1538 22H13.3845C13.6393 22 13.8461 21.8052 13.8461 21.5652V13.3043H17.1793C17.4147 13.3043 17.6122 13.1378 17.638 12.9174L17.9971 9.87391C18.0276 9.61652 17.8134 9.3913 17.5383 9.3913H13.8461V7.21739C13.8461 6.49696 14.4659 5.91304 15.2307 5.91304Z"
+                                class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-calendar-check">
+                            <rect x="3" y="4" width="18" height="17" rx="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></rect>
+                            <path d="M9 15L11 17L15 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                            <path d="M3 9H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                            <path d="M6 2V4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                            <path d="M18 2V4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol id="icon-lab" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11.3333V4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V11.3333C15 11.9824 15.2105 12.614 15.6 13.1333L20.9 20.2C20.9649 20.2865 21 20.3918 21 20.5C21 20.7761 20.7761 21 20.5 21H3.5C3.22386 21 3 20.7761 3 20.5C3 20.3918 3.03509 20.2865 3.1 20.2L8.4 13.1333C8.78947 12.614 9 11.9824 9 11.3333Z" stroke-width="2" stroke-linecap="round" class="spr-stroke-color"></path>
+                            <path d="M6.5 15.4992C6.5 15.4992 9 16.9992 11 16.9992C13 16.9992 15.5 13.9985 17 14.9992" stroke-width="2" class="spr-stroke-color"></path>
+                            <path d="M8 3H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol id="icon-research" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H5L7 19L9 5L11 12H13L15 19L17 5L19 12H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol id="icon-user" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></circle>
+                            <circle cx="12" cy="10" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></circle>
+                            <path d="M17 19C15.7398 17.1512 13.9656 16 12 16C10.0344 16 8.26019 17.1512 7 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol id="icon-logout" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 7V4C13 3.44772 12.5523 3 12 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H12C12.5523 21 13 20.5523 13 20V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                            <path d="M10 12H21M21 12L18 9M21 12L18 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spr-stroke-color"></path>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-cardio" stroke="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2 9.264C2 5.65 4.626 3 8.048 3c1.622 0 2.973.66 3.954 1.702A5.305 5.305 0 0115.952 3C19.374 3 22 5.651 22 9.264c0 2.158-.941 4.215-2.482 6.099-1.54 1.883-3.722 3.649-6.333 5.254a.867.867 0 01-.02.012l-.01.005a3.533 3.533 0 01-.47.225c-.157.06-.408.141-.685.141-.277 0-.528-.081-.687-.142a3.221 3.221 0 01-.477-.234l-.012-.007c-2.615-1.605-4.8-3.37-6.341-5.254C2.94 13.48 2 11.422 2 9.263zM8.048 5C5.78 5 4 6.706 4 9.264c0 1.554.677 3.178 2.03 4.833 1.354 1.653 3.34 3.28 5.834 4.811.043.026.092.05.137.07.047-.02.1-.046.153-.075 2.485-1.53 4.466-3.155 5.816-4.806C19.323 12.442 20 10.818 20 9.264 20 6.706 18.22 5 15.952 5c-1.359 0-2.412.703-3.085 1.877a1 1 0 01-1.738-.006C10.477 5.714 9.41 5 8.05 5z"
+                                  class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-check">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4v7.64l.466-.079a2.998 2.998 0 011.22.05l1.56.389H11V4H5zM4 2a1 1 0 00-1 1v9.82a1 1 0 001.164.986l1.63-.272a1 1 0 01.408.016l1.679.42c.079.02.16.03.242.03H12a1 1 0 001-1V3a1 1 0 00-1-1H4z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 6a1 1 0 011-1h2a1 1 0 010 2H7a1 1 0 01-1-1zm0 3a1 1 0 011-1h2a1 1 0 010 2H7a1 1 0 01-1-1z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-dantist">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8 4a4 4 0 00-4 4c0 1.239.529 4.38 1.42 7.238.442 1.422.953 2.702 1.493 3.607.27.453.522.767.739.958.216.19.328.197.348.197.034 0 .192-.019.478-.306.28-.282.588-.73.906-1.341.63-1.213 1.197-2.874 1.643-4.586a.996.996 0 01.62-.703.994.994 0 011.06.228.994.994 0 01.265.472c.447 1.697 1.018 3.36 1.65 4.577.32.615.629 1.067.91 1.351.288.293.442.308.468.308.02 0 .132-.008.348-.197.217-.19.469-.505.74-.958.539-.905 1.05-2.185 1.493-3.607C19.47 12.38 20 9.238 20 8a4 4 0 00-4-4c-1.028 0-2.011.431-2.743 1.106C13.731 5.964 14 6.95 14 8a1 1 0 11-2 0 3.982 3.982 0 00-.816-2.422A3.994 3.994 0 008 4zm4.01-.463A6 6 0 002 8c0 1.523.59 4.881 1.51 7.833.462 1.483 1.028 2.935 1.685 4.036.328.55.704 1.057 1.138 1.438.435.38.997.693 1.667.693.783 0 1.421-.419 1.896-.896.48-.484.899-1.129 1.263-1.83.302-.582.585-1.238.845-1.933.26.69.542 1.341.843 1.922.364.701.782 1.348 1.26 1.834.471.477 1.108.903 1.893.903.67 0 1.232-.312 1.667-.693.434-.38.81-.888 1.138-1.438.657-1.101 1.223-2.553 1.685-4.036C21.41 12.88 22 9.523 22 8a6 6 0 00-6-6c-1.521 0-2.929.606-3.99 1.537z"
+                                  class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-day">
+                            <path d="M18 12a6 6 0 11-12 0 6 6 0 0112 0z" fill="#FFB800"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M11 5V2h2v3h-2zm0 17v-3h2v3h-2zm3.634-16.562l1.5-2.598 1.732 1-1.5 2.598-1.732-1zm-8.5 14.722l1.5-2.598 1.732 1-1.5 2.598-1.732-1zM17.562 7.634l2.598-1.5 1 1.732-2.598 1.5-1-1.732zm-14.722 8.5l2.598-1.5 1 1.732-2.598 1.5-1-1.732zM19 11h3v2h-3v-2zM2 11h3v2H2v-2zm16.562 3.634l2.598 1.5-1 1.732-2.598-1.5 1-1.732zM3.84 6.134l2.598 1.5-1 1.732-2.598-1.5 1-1.732zm12.526 11.428l1.5 2.598-1.732 1-1.5-2.598 1.732-1zM7.866 2.84l1.5 2.598-1.732 1-1.5-2.598 1.732-1z"
+                                  fill="#FFB800"></path>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-derma" stroke="none">
+                            <g class="spr-fill-color">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M19.388 4.23a2.5 2.5 0 013.063 3.513 2.5 2.5 0 01-.33 4.103l-.477.275a2.5 2.5 0 01-.622 3.823l-8.91 5.145a5 5 0 01-2.822.659l-2.39-.154a1 1 0 01.13-1.996l2.389.154a3 3 0 001.693-.396l8.91-5.144a.5.5 0 10-.5-.866l-3.031 1.75a1 1 0 01-1-1.732l5.63-3.25a.5.5 0 00-.5-.866l-6.496 3.75a1 1 0 11-1-1.732l7.361-4.25a.5.5 0 10-.5-.866l-7.361 4.25a1 1 0 11-1-1.732l5.63-3.25a.5.5 0 00-.5-.866L7.66 9.802a1 1 0 01-1.367-1.365l2.568-4.464a.014.014 0 000-.013.049.049 0 00-.003-.005.027.027 0 00-.008-.002h-.008l-.004.006-6.058 8.555a1 1 0 11-1.632-1.156l6.057-8.555c.88-1.242 2.765-1.098 3.445.263.302.604.281 1.32-.056 1.905l-.712 1.238 5.871-3.39a2.5 2.5 0 013.634 1.412z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M8.719 18.34c-.008.699.066 1.587.138 2.195a1 1 0 01-1.986.237 20.738 20.738 0 01-.152-2.456c.005-.395.03-.83.12-1.184a1.65 1.65 0 01.32-.66 1.154 1.154 0 011.196-.382c.215.058.438.143.611.21l.043.017c.2.076.362.137.519.179.304.081.444.054.55-.007.503-.29 1.072-.23 1.427-.16.403.08.827.233 1.215.402.78.34 1.576.808 2.074 1.137a1 1 0 11-1.101 1.67 12.688 12.688 0 00-1.77-.973 4.166 4.166 0 00-.803-.274 1.086 1.086 0 00-.135-.019c-.728.38-1.448.297-1.975.155a5.045 5.045 0 01-.291-.088zm.066-.739l-.004.012a.068.068 0 01.004-.012z"></path>
+                                <path d="M10.06 12.457a1 1 0 11-1.732 1 1 1 0 011.732-1zm-4.828 3.409a1 1 0 11-1.732 1 1 1 0 011.732-1zm1.23-3.641a1 1 0 11-1.732 1 1 1 0 011.732-1z"></path>
+                            </g>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-download">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 13a1 1 0 011-1h10a1 1 0 110 2H3a1 1 0 01-1-1zM8 2a1 1 0 011 1v4.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L7 7.586V3a1 1 0 011-1z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-eavning" stroke="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 14.97c-1.315.59-2.765.917-4.288.917-5.966 0-10.802-5.016-10.802-11.204 0-.925.108-1.824.312-2.683C4.103 3.839 2 7.316 2 11.304c0 5.907 4.616 10.695 10.31 10.695 4.454 0 8.247-2.928 9.69-7.03z" fill="#FFB800"></path>
+                            <path d="M14 4l1-2 1 2 2 1-2 1-1 2-1-2-2-1 2-1zm3 5l1-2 1 2 2 1-2 1-1 2-1-2-2-1 2-1z" fill="#AF8006"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-gastro">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.385 4a3.385 3.385 0 000 6.77H11.5a1 1 0 110 2h-2a2 2 0 000 4H12V21a1 1 0 11-2 0v-2.23h-.5a4 4 0 01-3.19-6.415A5.386 5.386 0 018.385 2h6.846a6.77 6.77 0 012.526 13.051 2.615 2.615 0 01-2.372 3.718H15V21a1 1 0 11-2 0v-4.23h2.385a.615.615 0 100-1.231H12a1 1 0 010-2h3.23a4.77 4.77 0 000-9.539H8.386z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-ginec">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9a5 5 0 1010 0 5 5 0 00-10 0zm5-7a7 7 0 100 14 7 7 0 000-14z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.207 12.793a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414-1.414l7.5-7.5a1 1 0 011.414 0z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.293 14.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-lor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.938 2.002a1 1 0 011.06.936l.28 4.471c.158 2.54-1.397 4.88-3.779 5.746A2.275 2.275 0 004 15.282c0 1.09.78 2.025 1.854 2.22l1.942.354a3.292 3.292 0 012.043 1.262c.416.555 1.07.882 1.763.882H12a1 1 0 010 2h-.398a4.205 4.205 0 01-3.363-1.682 1.29 1.29 0 00-.801-.495l-1.942-.353A4.257 4.257 0 012 15.282a4.276 4.276 0 012.816-4.006A3.752 3.752 0 007.28 7.534l-.279-4.472a1 1 0 01.936-1.06z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.062 2.002a1 1 0 00-1.06.936l-.28 4.471c-.158 2.54 1.397 4.88 3.779 5.746A2.275 2.275 0 0120 15.282c0 1.09-.78 2.025-1.854 2.22l-1.942.354a3.29 3.29 0 00-2.043 1.262 2.205 2.205 0 01-1.763.882H12a1 1 0 000 2h.398c1.323 0 2.57-.623 3.363-1.682.195-.26.481-.437.801-.495l1.942-.353A4.257 4.257 0 0022 15.282a4.276 4.276 0 00-2.816-4.006 3.752 3.752 0 01-2.465-3.742l.28-4.472a1 1 0 00-.937-1.06z"
+                                  class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-morning">
+                            <path d="M18 12a6 6 0 11-12 0 6 6 0 0112 0z" fill="#FFB800"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5V2h2v3h-2zm3.634.438l1.5-2.598 1.732 1-1.5 2.598-1.732-1zm2.928 2.196l2.598-1.5 1 1.732-2.598 1.5-1-1.732zM19 11h3v2h-3v-2zM2 11h3v2H2v-2zm1.84-4.866l2.598 1.5-1 1.732-2.598-1.5 1-1.732zM7.866 2.84l1.5 2.598-1.732 1-1.5-2.598 1.732-1z" fill="#FFB800"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-neurol">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5.7a3.7 3.7 0 017.399-.099A3.7 3.7 0 0120.829 12a3.7 3.7 0 01-2.431 6.399A3.7 3.7 0 0111 18.3V5.7zm7.3 7.3v-2a1.7 1.7 0 100-3.4 1.9 1.9 0 01-1.9-1.9 1.7 1.7 0 10-3.4 0v12.6a1.7 1.7 0 103.4 0c0-1.05.85-1.9 1.9-1.9a1.7 1.7 0 100-3.4z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 18.3a3.7 3.7 0 01-7.399.099A3.7 3.7 0 013.171 12a3.7 3.7 0 012.431-6.399A3.7 3.7 0 0113 5.7v12.6zM5.7 11v2a1.7 1.7 0 100 3.4c1.05 0 1.9.85 1.9 1.9a1.7 1.7 0 103.4 0V5.7a1.7 1.7 0 10-3.4 0 1.9 1.9 0 01-1.9 1.9 1.7 1.7 0 000 3.4zM17 10a3 3 0 01-3-3h2a1 1 0 001 1v2z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14a3 3 0 013 3H8a1 1 0 00-1-1v-2zm10 0a3 3 0 00-3 3h2a1 1 0 011-1v-2zM7 10a3 3 0 003-3H8a1 1 0 01-1 1v2z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-oft">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.938 15a3 3 0 10-2.626-4.453 1.5 1.5 0 010 2.906A3 3 0 0011.938 15z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.245 12c1.758 3.125 4.648 5 7.755 5s5.997-1.875 7.755-5C17.997 8.875 15.107 7 12 7s-5.997 1.875-7.755 5zm-1.827-.828a1.728 1.728 0 000 1.657C4.447 16.542 7.98 19.001 12 19.001c4.02 0 7.553-2.459 9.582-6.172a1.728 1.728 0 000-1.657C19.553 7.458 16.02 5 12 5c-4.02 0-7.553 2.458-9.582 6.172z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-open" stroke="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 2a1 1 0 011 1v9h9a1 1 0 110 2H3a1 1 0 01-1-1V3a1 1 0 011-1z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3a1 1 0 011-1h5a1 1 0 011 1v5a1 1 0 11-2 0V5.414L7.707 9.707a1 1 0 01-1.414-1.414L10.586 4H8a1 1 0 01-1-1z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-oth">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.826 12H7.173l.322 3.855a4.52 4.52 0 009.01 0L16.826 12zm-9.653-2a2 2 0 00-1.993 2.166l.322 3.855a6.52 6.52 0 0012.996 0l.321-3.855A2 2 0 0016.826 10H7.173z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.247 10h9.506l-.7-6H7.947l-.7 6zm-2.117.884l.83-7.116A2 2 0 017.947 2h8.106a2 2 0 011.987 1.768l.83 7.116A1 1 0 0117.876 12H6.123a1 1 0 01-.993-1.116z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5a1 1 0 011 1V6h.5a1 1 0 110 2H13v.5a1 1 0 11-2 0V8h-.5a1 1 0 010-2h.5v-.5a1 1 0 011-1z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-research">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.932 4.002a1 1 0 011.03.723L11.754 11H13a1 1 0 01.961.725l.712 2.491L16.01 4.86a1 1 0 011.951-.134L19.755 11H21a1 1 0 110 2h-2a1 1 0 01-.962-.725l-.711-2.491-1.337 9.357a1 1 0 01-1.951.134L12.246 13H11a1 1 0 01-.961-.725l-.712-2.491L7.99 19.14a1 1 0 01-1.952.134L4.246 13H3a1 1 0 110-2h2a1 1 0 01.962.725l.711 2.491L8.01 4.86a1 1 0 01.922-.857z" fill="#000"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-pulm">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13 8.004A4.313 4.313 0 004 12.313v6.686a4.644 4.644 0 004.532-4.952l-.403-6.043zM8.312 6A6.313 6.313 0 002 12.313v6.789C2 20.15 2.85 21 3.898 21a6.644 6.644 0 006.63-7.086l-.416-6.23A1.804 1.804 0 008.312 6zM20 18.999v-6.686a4.313 4.313 0 00-4.13-4.31l-.402 6.044A4.644 4.644 0 0020 19zM15.687 6c-.95 0-1.736.736-1.8 1.684l-.415 6.23A6.644 6.644 0 0020.102 21C21.15 21 22 20.15 22 19.102v-6.79A6.313 6.313 0 0015.687 6z"
+                                  class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2a1 1 0 011 1v6.564l.166.145c.306.262.742.611 1.264.959C15.505 11.385 16.8 12 18 12a1 1 0 110 2c-1.8 0-3.505-.885-4.68-1.668a15.32 15.32 0 01-1.32-.99c-.34.285-.79.637-1.32.99C9.505 13.115 7.8 14 6 14a1 1 0 110-2c1.2 0 2.495-.615 3.57-1.332A13.33 13.33 0 0011 9.564V3a1 1 0 011-1z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.447 12.106a1 1 0 01.447 1.341l-1.5 3a1 1 0 11-1.788-.894l1.5-3a1 1 0 011.341-.447zm9.106 0a1 1 0 011.341.447l1.5 3a1 1 0 11-1.788.894l-1.5-3a1 1 0 01.447-1.341z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-revm">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13a1 1 0 110-2 1 1 0 010 2zm0 2a3 3 0 110-6 3 3 0 010 6zm4.333-11c.416 0 .787.189 1.033.49a1 1 0 101.547-1.268 3.333 3.333 0 10-3.461 5.327A3.335 3.335 0 0022 7.667a3.328 3.328 0 00-1.19-2.553 1 1 0 00-1.286 1.531 1.333 1.333 0 11-2.19 1.021 1 1 0 00-1-1 1.333 1.333 0 010-2.666z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.707 1.293a1 1 0 00-1.414 0l-2 2a1 1 0 001.414 1.414l2-2a1 1 0 000-1.414zm2 2a1 1 0 00-1.414 0l-2 2a1 1 0 001.414 1.414l2-2a1 1 0 000-1.414zM7.667 20a1.33 1.33 0 01-1.033-.49 1 1 0 00-1.547 1.268 3.333 3.333 0 103.461-5.327A3.335 3.335 0 002 16.333c0 1.025.464 1.943 1.19 2.553a1 1 0 101.286-1.531 1.333 1.333 0 112.19-1.021 1 1 0 001 1 1.333 1.333 0 010 2.666z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.293 22.707a1 1 0 001.414 0l2-2a1 1 0 10-1.414-1.414l-2 2a1 1 0 000 1.414zm-2-2a1 1 0 001.414 0l2-2a1 1 0 10-1.414-1.414l-2 2a1 1 0 000 1.414z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-search">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.293 7.293a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2a3 3 0 100 6 3 3 0 000-6zM0 5a5 5 0 1110 0A5 5 0 010 5z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-slicer">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M18.293 2.293a2.414 2.414 0 113.414 3.414l-8 8a1 1 0 01-1.414 0l-.246-.246.01.16c.028.446.048 1.063.017 1.745a10.946 10.946 0 01-.302 2.18c-.186.726-.49 1.488-1.008 2.1-.696.823-1.676 1.262-2.634 1.496-.965.236-1.999.286-2.921.26a19.075 19.075 0 01-3.356-.41l-.058-.013-.016-.004h-.005l-.002-.001L2 20l-.23.974a1 1 0 01-.477-1.681l17-17zM4.092 19.323c.366.037.763.067 1.175.08.823.023 1.662-.026 2.388-.204.733-.179 1.26-.465 1.581-.845.25-.294.453-.736.598-1.305.144-.56.215-1.18.242-1.775a14.46 14.46 0 00-.042-1.894l-5.942 5.942zM13 11.585l7.293-7.293a.414.414 0 10-.586-.586L12.414 11l.586.586z"
+                                  class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-terapevt">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 11V3h2v8a4 4 0 008 0V3h2v8a6 6 0 01-12 0z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M11.553 4.342a1.618 1.618 0 112.894 0c-.596 1.192-2.298 1.192-2.894 0zm1.789-.553a.378.378 0 000-.342.377.377 0 00-.342-.21.377.377 0 00-.342.21.378.378 0 000 .342A.38.38 0 0013 4a.38.38 0 00.342-.211zm-11.789.553a1.618 1.618 0 112.894 0c-.596 1.192-2.298 1.192-2.894 0zm1.789-.553a.378.378 0 000-.342.378.378 0 00-.342-.21.378.378 0 00-.342.21.378.378 0 000 .342A.38.38 0 003 4a.38.38 0 00.342-.211zM20 12v2.53A7.47 7.47 0 0112.53 22 5.53 5.53 0 017 16.47V16h2v.47A3.53 3.53 0 0012.53 20 5.47 5.47 0 0018 14.53V12h2z"
+                                  class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 9a1 1 0 100 2 1 1 0 000-2zm-3 1a3 3 0 116 0 3 3 0 01-6 0z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-travma">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.667 9c-.416 0-.787-.189-1.033-.49a1 1 0 10-1.547 1.268 3.333 3.333 0 103.461-5.327A3.335 3.335 0 0013 5.333c0 1.025.464 1.943 1.19 2.553a1 1 0 001.286-1.531 1.333 1.333 0 112.19-1.021 1 1 0 001 1 1.333 1.333 0 010 2.666z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 12.707a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414zm-1-3a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414l-2 2a1 1 0 000 1.414z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.293 8.293a1 1 0 011.414 0L15 9.586V12a1 1 0 11-2 0v-1.586l-.707-.707a1 1 0 010-1.414zM5.333 15c.416 0 .786.189 1.033.49a1 1 0 001.547-1.268 3.333 3.333 0 10-3.461 5.327A3.335 3.335 0 0011 18.667a3.328 3.328 0 00-1.19-2.553 1 1 0 10-1.286 1.531 1.333 1.333 0 11-2.19 1.021 1 1 0 00-1-1 1.333 1.333 0 010-2.666z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.707 11.293a1 1 0 00-1.414 0l-3 3a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414zm1 3a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414l2-2a1 1 0 000-1.414z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.293 11.293a1 1 0 011.414 0L12 12.586V15a1 1 0 11-2 0v-1.586l-.707-.707a1 1 0 010-1.414zM11 4a1 1 0 011 1v2a1 1 0 11-2 0V5a1 1 0 011-1zm-2 6a1 1 0 01-1 1H6a1 1 0 110-2h2a1 1 0 011 1zM6.293 5.293a1 1 0 011.414 0l1 1a1 1 0 01-1.414 1.414l-1-1a1 1 0 010-1.414z" class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-urol">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 016-6 3 3 0 013 3v2a1 1 0 11-2 0V5a1 1 0 00-1-1 4 4 0 00-4 4v5a3 3 0 003 3h2v-.158a4 4 0 00-1.44-3.073l-1.2-1a1 1 0 111.28-1.537l1.201 1A6 6 0 0111 15.843V21a1 1 0 11-2 0v-3H7a5 5 0 01-5-5V8zm20 0a6 6 0 00-6-6 3 3 0 00-3 3v2a1 1 0 102 0V5a1 1 0 011-1 4 4 0 014 4v5a3 3 0 01-3 3h-2v-.158a4 4 0 011.44-3.073l1.2-1a1 1 0 10-1.28-1.537l-1.201 1A6 6 0 0013 15.843V21a1 1 0 102 0v-3h2a5 5 0 005-5V8z"
+                                  class="spr-fill-color"></path>
+                        </symbol>
+                        <symbol stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-urol-sec">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 15a5 5 0 1010 0 5 5 0 00-10 0zm5-7a7 7 0 100 14A7 7 0 009 8z" class="spr-fill-color"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 3a1 1 0 011-1h7v7a1 1 0 11-2 0V5.414l-5.793 5.793a1 1 0 01-1.414-1.414L18.586 4H15a1 1 0 01-1-1z" class="spr-fill-color"></path>
+                        </symbol>
+                    </svg>
+                    <div class="lo-row lo-head">
+                        <div class="lo-cell">
+                            <div class="lo-block">
+                                <div class="app-header">
+                                    <div class="app-header__top">
+                                        <div class="app-header__top-container lo-container">
+                                            <div class="app-header__top-col">
+                                                <div class="app-header__logo-wrap"><a href="/" class="app-logo app-header__logo">
+                                                    <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <path
+                                                                d="M23.5336 18.1415C22.4552 18.1801 21.3809 17.988 20.3815 17.578C19.3822 17.1679 18.4806 16.5492 17.7361 15.7626C16.1866 14.0251 15.3804 11.7422 15.4928 9.4097C15.4088 7.11581 16.1732 4.87215 17.6379 3.11323C18.3828 2.27787 19.304 1.6211 20.3339 1.19113C21.3638 0.761164 22.4763 0.568923 23.5897 0.628522C24.6555 0.590426 25.7173 0.779503 26.7056 1.18337C27.6938 1.58723 28.5861 2.19677 29.3241 2.97205C30.8466 4.66541 31.645 6.8947 31.5464 9.17676C31.6646 11.5514 30.8629 13.8796 29.3101 15.6709C28.5801 16.4726 27.6865 17.106 26.6907 17.5275C25.6948 17.9491 24.6203 18.1489 23.5406 18.1132L23.5336 18.1415ZM23.5406 14.2662C23.9352 14.2874 24.3269 14.1883 24.6646 13.9818C25.0023 13.7752 25.2703 13.4709 25.4334 13.1085C25.8166 12.3368 26.0082 10.925 26.0082 8.87323C26.0082 5.90382 25.2184 4.42146 23.6387 4.42617C21.9002 4.44499 21.0309 6.14617 21.0309 9.5297C21.0309 12.7062 21.8488 14.2921 23.4845 14.2873"
+                                                                fill="#C4111F"></path>
+                                                            <path
+                                                                d="M33.7407 17.8734V0.875732H46.184V4.40514H38.7811V7.48279H41.5853C42.8264 7.43281 44.0662 7.60979 45.2446 8.00514C46.1054 8.33622 46.8411 8.93131 47.3477 9.70632C47.8791 10.5491 48.1499 11.5318 48.1259 12.5299C48.1242 13.4723 47.9084 14.4019 47.4949 15.2475C47.0516 16.1487 46.281 16.8438 45.3428 17.1887C44.3668 17.5954 43.3215 17.8064 42.2653 17.8098H33.7407V17.8734ZM38.7811 14.1181H41.3048C41.5158 14.1432 41.7298 14.1197 41.9304 14.0494C42.1311 13.9791 42.3133 13.8637 42.4632 13.7121C42.6131 13.5605 42.7268 13.3766 42.7957 13.1742C42.8647 12.9718 42.887 12.7563 42.8611 12.544C42.8611 11.5275 42.2255 11.0193 40.9543 11.0193H38.7811V14.1181Z"
+                                                                fill="#C4111F"></path>
+                                                            <path d="M50.2637 17.7035V0.705811H64.2072V17.7035H59.1738V4.35522H55.3041V17.7035H50.2637Z" fill="#C4111F"></path>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.58242 0.281573C2.97648 -0.397638 4.6534 0.189678 5.32795 1.59338L15.0776 21.882H65.1955C66.7442 21.882 67.9997 23.1462 67.9997 24.7056C67.9997 26.2649 66.7442 27.5291 65.1955 27.5291H15.0793L6.03008 46.4037C5.35679 47.808 3.68039 48.3968 2.28573 47.7189C0.891068 47.0409 0.306277 45.3529 0.979561 43.9486L10.2048 24.707L0.279631 4.05302C-0.394911 2.64932 0.188368 0.960783 1.58242 0.281573Z"
+                                                                  fill="#024593"></path>
+                                                            <path d="M15.8225 26.9647C15.8225 27.1688 15.742 27.3645 15.5987 27.5088C15.4554 27.6531 15.261 27.7342 15.0584 27.7342H10.06C9.85736 27.7342 9.66301 27.6531 9.5197 27.5088C9.3764 27.3645 9.2959 27.1688 9.2959 26.9647V21.9247C9.30138 21.7244 9.3843 21.5341 9.52701 21.3943C9.66972 21.2546 9.86096 21.1764 10.06 21.1765H15.0584C15.261 21.1765 15.4554 21.2576 15.5987 21.4019C15.742 21.5462 15.8225 21.7419 15.8225 21.9459V26.9647Z"
+                                                                  fill="white"></path>
+                                                            <path d="M15.8225 26.9647C15.8225 27.1688 15.742 27.3645 15.5987 27.5088C15.4554 27.6531 15.261 27.7342 15.0584 27.7342H10.06C9.85736 27.7342 9.66301 27.6531 9.5197 27.5088C9.3764 27.3645 9.2959 27.1688 9.2959 26.9647V21.9247C9.30138 21.7244 9.3843 21.5341 9.52701 21.3943C9.66972 21.2546 9.86096 21.1764 10.06 21.1765H15.0584C15.261 21.1765 15.4554 21.2576 15.5987 21.4019C15.742 21.5462 15.8225 21.7419 15.8225 21.9459V26.9647Z"
+                                                                  stroke="#C4111F" stroke-miterlimit="10"></path>
+                                                            <path d="M14.8128 23.8661V25.0237H13.1373V26.7743H11.9806V25.0237H10.3052V23.8661H11.9806V22.1155H13.1373V23.8661H14.8128Z" fill="#C4111F"></path>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="68" height="48" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                                    <div class="app-header__logo-mob-desk">
+                                                        Объединенная Больница<br>
+                                                        с Поликлиникой
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="app-header__top-col">
+                                                <div class="svg-desk">
+                                                    <svg width="373" height="48" viewBox="0 0 373 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="app-header-svg-btm">
+                                                        <text x="0" y="13" class="app-header-svg-up__text">
+                                                            Управление делами Президента РФ ФГБУ
+                                                        </text>
+                                                        <svg x="0" y="23">
+                                                            <g>
+                                                                <path
+                                                                    d="M5.94 0.76C3.68 0.76 2.4 1.78 1.74 2.54C0.4 4.08 0.2 6.3 0.2 8C0.2 9.74 0.4 11.94 1.74 13.48C2.62 14.5 3.94 15.24 5.94 15.24C7.94 15.24 9.26 14.5 10.14 13.48C11.48 11.94 11.68 9.74 11.68 8C11.68 6.3 11.48 4.08 10.14 2.54C9.48 1.78 8.2 0.76 5.94 0.76ZM9.52 8.76C9.52 9.78 9.44 11.64 8.5 12.7C8.08 13.18 7.32 13.72 5.94 13.72C4.56 13.72 3.8 13.18 3.38 12.7C2.44 11.64 2.36 9.78 2.36 8.76V7.24C2.36 6.22 2.44 4.36 3.38 3.3C3.8 2.82 4.56 2.28 5.94 2.28C7.32 2.28 8.08 2.82 8.5 3.3C9.44 4.36 9.52 6.22 9.52 7.24V8.76ZM136.916 15H140.896C142.176 15 143.836 14.82 145.016 13.76C145.856 13 146.316 11.84 146.316 10.88C146.316 9.82 145.836 8.54 144.816 7.74C143.516 6.72 141.896 6.74 140.636 6.74H138.876V2.6H144.976V0.999999H136.916V15ZM138.876 8.34H141.396C141.836 8.34 142.716 8.38 143.356 8.9C143.676 9.16 144.156 9.74 144.156 10.92C144.156 11.84 143.816 12.36 143.576 12.62C143.156 13.08 142.376 13.4 141.536 13.4H138.876V8.34ZM252.981 0.999999H242.541V15H244.501V2.6H251.021V15H252.981V0.999999Z"
+                                                                    fill="#C4111F"></path>
+                                                                <path
+                                                                    d="M20.8067 0.22L20.7867 0.359999C20.7067 0.96 20.3067 1.12 19.2867 1.34L18.4467 1.52C17.7067 1.68 16.6067 1.86 15.7667 2.56C15.0667 3.14 14.7267 3.92 14.5267 4.66C14.1867 5.9 14.0867 7.44 14.0867 9.2C14.0867 10.46 14.0867 12.62 15.2867 13.94C15.9067 14.62 16.9867 15.2 18.4267 15.2C19.8667 15.2 20.9267 14.62 21.5667 13.94C22.5667 12.86 22.7667 11.32 22.7667 10.14C22.7667 8.12 22.1667 6.96 21.6267 6.34C21.1867 5.82 20.2867 5.08 18.7267 5.08C17.4867 5.08 16.0467 5.56 15.4667 7.02H15.3267C15.3667 5.9 15.7067 4.6 16.3067 4C16.8867 3.42 17.8267 3.26 18.3867 3.14L19.7867 2.84C20.8467 2.62 21.3667 2.32 21.5867 2.18C22.0267 1.9 22.3867 1.5 22.4067 0.22H20.8067ZM20.8067 10.98C20.8067 11.74 20.7267 12.6 20.1067 13.26C19.8267 13.56 19.3067 13.92 18.4267 13.92C17.5467 13.92 17.0267 13.56 16.7467 13.26C16.1267 12.6 16.0467 11.74 16.0467 10.98V9.3C16.0467 8.54 16.1267 7.68 16.7467 7.02C17.0267 6.72 17.5467 6.36 18.4267 6.36C19.3067 6.36 19.8267 6.72 20.1067 7.02C20.7267 7.68 20.8067 8.54 20.8067 9.3V10.98ZM28.2056 8.86V5.28H23.8656V6.68H26.4056V15H30.5656C32.0056 15 32.8856 14.58 33.3856 14.12C33.9256 13.64 34.3456 12.86 34.3456 11.94C34.3456 11.06 33.9856 10.26 33.3456 9.72C32.4056 8.94 31.1056 8.86 30.2656 8.86H28.2056ZM28.2056 10.26H30.6256C31.3456 10.26 31.7856 10.48 32.0056 10.68C32.4256 11.04 32.5056 11.5 32.5056 11.94C32.5056 12.64 32.2256 12.98 32.0856 13.12C31.8456 13.38 31.3856 13.6 30.6856 13.6H28.2056V10.26ZM37.8975 10.56H43.8975V10.12C43.8975 8.56 43.8375 7.28 42.8775 6.24C42.2375 5.56 41.2575 5.08 40.0175 5.08C38.6775 5.08 37.6775 5.68 37.0575 6.36C36.0375 7.52 35.9375 9.02 35.9375 9.98C35.9375 11.08 36.0975 12.68 37.0975 13.8C37.7575 14.54 38.8975 15.2 40.5175 15.2C41.2375 15.2 41.9975 15.1 42.7975 14.8C43.2175 14.64 43.6775 14.4 43.9775 14.24L43.4175 13.1C43.0975 13.26 42.7375 13.42 42.2975 13.56C41.7575 13.72 41.3375 13.8 40.7775 13.8C39.8575 13.8 39.0375 13.5 38.5775 13C38.2575 12.66 37.8975 11.98 37.8975 10.82V10.56ZM37.8975 9.28V9.06C37.8975 7.94 38.2375 7.32 38.5375 7C38.7975 6.7 39.2575 6.36 39.9975 6.36C40.5175 6.36 40.9975 6.48 41.3775 6.84C42.0175 7.44 42.0175 8.2 42.0175 8.88V9.28H37.8975ZM53.3613 5.28H47.5213L47.4813 7.3C47.4413 9 47.3213 9.88 47.2213 10.32C46.9213 11.82 46.2413 12.88 45.6613 13.6H44.8813V17.62H46.5813V15H52.9413V17.62H54.6413V13.6H53.3613V5.28ZM51.6013 6.68V13.6H47.4212C47.8413 13.04 48.2613 12.28 48.5413 11.32C48.7413 10.62 48.9013 9.64 48.9613 7.86L49.0013 6.68H51.6013ZM65.1528 5.28H63.2728L58.4328 12.78V5.28H56.6728V15H58.5528L63.3928 7.5V15H65.1528V5.28ZM76.1553 5.28H74.3953V9.22H69.9953V5.28H68.2353V15H69.9953V10.62H74.3953V15H76.1553V5.28ZM80.6514 10.56H86.6514V10.12C86.6514 8.56 86.5914 7.28 85.6314 6.24C84.9914 5.56 84.0114 5.08 82.7714 5.08C81.4314 5.08 80.4314 5.68 79.8114 6.36C78.7914 7.52 78.6914 9.02 78.6914 9.98C78.6914 11.08 78.8514 12.68 79.8514 13.8C80.5114 14.54 81.6514 15.2 83.2714 15.2C83.9914 15.2 84.7514 15.1 85.5514 14.8C85.9714 14.64 86.4314 14.4 86.7314 14.24L86.1714 13.1C85.8514 13.26 85.4914 13.42 85.0514 13.56C84.5114 13.72 84.0914 13.8 83.5314 13.8C82.6114 13.8 81.7914 13.5 81.3314 13C81.0114 12.66 80.6514 11.98 80.6514 10.82V10.56ZM80.6514 9.28V9.06C80.6514 7.94 80.9914 7.32 81.2914 7C81.5514 6.7 82.0114 6.36 82.7514 6.36C83.2714 6.36 83.7514 6.48 84.1314 6.84C84.7714 7.44 84.7714 8.2 84.7714 8.88V9.28H80.6514ZM96.9952 5.28H95.2352V9.22H90.8352V5.28H89.0752V15H90.8352V10.62H95.2352V15H96.9952V5.28ZM107.991 5.28H106.231V9.22H101.831V5.28H100.071V15H101.831V10.62H106.231V15H107.991V5.28ZM116.727 15H118.327V8.72C118.327 7.76 118.347 6.76 117.567 5.98C116.727 5.14 115.167 5.08 114.687 5.08C114.047 5.08 112.647 5.14 111.767 5.72C111.227 6.08 110.747 6.7 111.007 7.76L112.607 7.84C112.607 7.36 112.707 6.96 113.147 6.68C113.567 6.4 114.247 6.36 114.587 6.36C114.967 6.36 115.707 6.4 116.147 6.8C116.527 7.16 116.567 7.56 116.567 8.02V9.28H115.047C112.887 9.28 111.967 9.8 111.567 10.1C111.087 10.48 110.527 11.2 110.527 12.36C110.527 13.46 111.047 14.12 111.427 14.46C112.147 15.1 112.967 15.2 113.747 15.2C114.467 15.2 114.967 15.12 115.567 14.8C116.127 14.5 116.427 14.14 116.647 13.8H116.727V15ZM116.567 12.56C116.327 12.96 116.047 13.2 115.687 13.44C115.207 13.76 114.847 13.88 114.247 13.88C113.767 13.88 113.307 13.8 112.907 13.46C112.527 13.14 112.407 12.76 112.407 12.3C112.407 11.62 112.687 11.2 112.947 10.98C113.267 10.7 113.847 10.48 114.967 10.48H116.567V12.56ZM128.803 5.28H124.263C123.603 5.28 122.763 5.46 122.243 5.78C121.523 6.22 121.103 7.04 121.103 7.88C121.103 8.52 121.363 9.14 121.723 9.54C122.043 9.9 122.603 10.26 123.303 10.36V10.42C123.203 10.46 122.883 10.58 122.603 10.82C122.243 11.14 122.103 11.46 121.983 11.72L120.423 15H122.423L123.643 12.28C123.823 11.86 124.043 11.46 124.383 11.2C124.763 10.9 125.143 10.88 125.483 10.88H127.043V15H128.803V5.28ZM127.043 6.68V9.48H124.903C123.783 9.48 122.943 9.06 122.943 8.1C122.943 7.68 123.043 7.26 123.443 6.98C123.863 6.68 124.383 6.68 124.783 6.68H127.043ZM152.856 5.08C151.416 5.08 150.356 5.66 149.716 6.34C148.716 7.42 148.516 8.96 148.516 10.14C148.516 11.32 148.716 12.86 149.716 13.94C150.356 14.62 151.416 15.2 152.856 15.2C154.296 15.2 155.356 14.62 155.996 13.94C156.996 12.86 157.196 11.32 157.196 10.14C157.196 8.96 156.996 7.42 155.996 6.34C155.356 5.66 154.296 5.08 152.856 5.08ZM155.236 10.58C155.236 11.5 155.236 12.52 154.536 13.26C154.256 13.56 153.736 13.92 152.856 13.92C151.976 13.92 151.456 13.56 151.176 13.26C150.476 12.52 150.476 11.5 150.476 10.58V9.7C150.476 8.78 150.476 7.76 151.176 7.02C151.456 6.72 151.976 6.36 152.856 6.36C153.736 6.36 154.256 6.72 154.536 7.02C155.236 7.76 155.236 8.78 155.236 9.7V10.58ZM166.294 5.28H160.174L160.154 6.88C160.154 7.48 160.094 9.5 160.054 10.42C160.014 11.38 159.914 12.66 159.174 13.28C158.794 13.6 158.154 13.78 157.734 13.84L158.194 15.26C158.814 15.22 159.534 15.02 160.014 14.72C161.114 14.02 161.374 12.82 161.494 11.66C161.574 10.86 161.674 8.86 161.694 7.76L161.714 6.68H164.534V15H166.294V5.28ZM171.168 8.86V5.28H169.368V15H173.528C174.968 15 175.848 14.58 176.348 14.12C176.888 13.64 177.308 12.86 177.308 11.94C177.308 11.06 176.948 10.26 176.308 9.72C175.368 8.94 174.068 8.86 173.228 8.86H171.168ZM171.168 10.26H173.588C174.308 10.26 174.748 10.48 174.968 10.68C175.388 11.04 175.468 11.5 175.468 11.94C175.468 12.64 175.188 12.98 175.048 13.12C174.808 13.38 174.348 13.6 173.648 13.6H171.168V10.26ZM187.366 5.28H185.606V9.22H181.206V5.28H179.446V15H181.206V10.62H185.606V15H187.366V5.28ZM198.922 5.28H197.042L192.202 12.78V5.28H190.442V15H192.322L197.162 7.5V15H198.922V5.28ZM207.885 5.28V13.6H203.765V5.28H202.005V15H209.225V17.62H210.925V13.6H209.645V5.28H207.885ZM218.622 15H220.222V8.72C220.222 7.76 220.242 6.76 219.462 5.98C218.622 5.14 217.062 5.08 216.582 5.08C215.942 5.08 214.542 5.14 213.662 5.72C213.122 6.08 212.642 6.7 212.902 7.76L214.502 7.84C214.502 7.36 214.602 6.96 215.042 6.68C215.462 6.4 216.142 6.36 216.482 6.36C216.862 6.36 217.602 6.4 218.042 6.8C218.422 7.16 218.462 7.56 218.462 8.02V9.28H216.942C214.782 9.28 213.862 9.8 213.462 10.1C212.982 10.48 212.422 11.2 212.422 12.36C212.422 13.46 212.942 14.12 213.322 14.46C214.042 15.1 214.862 15.2 215.642 15.2C216.362 15.2 216.862 15.12 217.462 14.8C218.022 14.5 218.322 14.14 218.542 13.8H218.622V15ZM218.462 12.56C218.222 12.96 217.942 13.2 217.582 13.44C217.102 13.76 216.742 13.88 216.142 13.88C215.662 13.88 215.202 13.8 214.802 13.46C214.422 13.14 214.302 12.76 214.302 12.3C214.302 11.62 214.582 11.2 214.842 10.98C215.162 10.7 215.742 10.48 216.862 10.48H218.462V12.56ZM234.605 13.1C234.285 13.26 233.925 13.42 233.485 13.56C232.945 13.72 232.505 13.8 231.965 13.8C231.625 13.8 230.645 13.74 230.005 13.14C229.285 12.46 229.245 11.54 229.245 10.72V9.42C229.245 8.68 229.185 7.44 230.185 6.74C230.545 6.5 231.025 6.36 231.585 6.36C232.245 6.36 232.745 6.54 233.045 6.84C233.445 7.24 233.445 7.82 233.385 8.38L235.005 8.24C235.305 7.2 234.925 6.14 233.925 5.6C233.305 5.26 232.405 5.08 231.745 5.08C230.785 5.08 229.685 5.34 228.945 5.9C227.505 6.98 227.285 8.88 227.285 10.2C227.285 11.04 227.405 13 228.825 14.24C229.745 15.04 230.865 15.2 231.705 15.2C232.605 15.2 233.305 15.06 233.985 14.8C234.405 14.64 234.865 14.4 235.165 14.24L234.605 13.1ZM260.219 5.08C258.779 5.08 257.719 5.66 257.079 6.34C256.079 7.42 255.879 8.96 255.879 10.14C255.879 11.32 256.079 12.86 257.079 13.94C257.719 14.62 258.779 15.2 260.219 15.2C261.659 15.2 262.719 14.62 263.359 13.94C264.359 12.86 264.559 11.32 264.559 10.14C264.559 8.96 264.359 7.42 263.359 6.34C262.719 5.66 261.659 5.08 260.219 5.08ZM262.599 10.58C262.599 11.5 262.599 12.52 261.899 13.26C261.619 13.56 261.099 13.92 260.219 13.92C259.339 13.92 258.819 13.56 258.539 13.26C257.839 12.52 257.839 11.5 257.839 10.58V9.7C257.839 8.78 257.839 7.76 258.539 7.02C258.819 6.72 259.339 6.36 260.219 6.36C261.099 6.36 261.619 6.72 261.899 7.02C262.599 7.76 262.599 8.78 262.599 9.7V10.58ZM273.657 5.28H267.537L267.517 6.88C267.517 7.48 267.457 9.5 267.417 10.42C267.377 11.38 267.277 12.66 266.537 13.28C266.157 13.6 265.517 13.78 265.097 13.84L265.557 15.26C266.177 15.22 266.897 15.02 267.377 14.72C268.477 14.02 268.737 12.82 268.857 11.66C268.937 10.86 269.037 8.86 269.057 7.76L269.077 6.68H271.897V15H273.657V5.28ZM285.211 5.28H283.331L278.491 12.78V5.28H276.731V15H278.611L283.451 7.5V15H285.211V5.28ZM290.054 5.28H288.294V15H290.054V10.54H291.474C291.814 10.54 292.174 10.58 292.514 10.84C292.894 11.12 293.034 11.52 293.214 11.94L294.594 15H296.554L294.954 11.42C294.934 11.38 294.674 10.78 294.254 10.38C293.914 10.06 293.574 9.9 293.174 9.84V9.78C293.554 9.68 293.854 9.48 294.054 9.28C294.414 8.92 294.514 8.56 294.654 8.18L294.974 7.24C295.114 6.86 295.234 6.7 295.314 6.62C295.434 6.5 295.574 6.48 295.714 6.48C295.854 6.48 296.034 6.5 296.234 6.62L296.494 5.3C296.114 5.14 295.714 5.08 295.374 5.08C295.094 5.08 294.894 5.12 294.634 5.22C294.194 5.4 293.834 5.68 293.474 6.76L293.094 7.88C292.994 8.16 292.834 8.56 292.574 8.8C292.234 9.12 291.754 9.14 291.414 9.14H290.054V5.28ZM305.747 5.28H299.627L299.607 6.88C299.607 7.48 299.547 9.5 299.507 10.42C299.467 11.38 299.367 12.66 298.627 13.28C298.247 13.6 297.607 13.78 297.187 13.84L297.647 15.26C298.267 15.22 298.987 15.02 299.467 14.72C300.567 14.02 300.827 12.82 300.947 11.66C301.027 10.86 301.127 8.86 301.147 7.76L301.167 6.68H303.987V15H305.747V5.28ZM317.301 5.28H315.421L310.581 12.78V5.28H308.821V15H310.701L315.541 7.5V15H317.301V5.28ZM328.304 5.28H326.544V9.22H322.144V5.28H320.384V15H322.144V10.62H326.544V15H328.304V5.28ZM339.86 5.28H337.98L333.14 12.78V5.28H331.38V15H333.26L338.1 7.5V15H339.86V5.28ZM344.702 5.28H342.942V15H344.702V10.54H346.122C346.462 10.54 346.822 10.58 347.162 10.84C347.542 11.12 347.682 11.52 347.862 11.94L349.242 15H351.202L349.602 11.42C349.582 11.38 349.322 10.78 348.902 10.38C348.562 10.06 348.222 9.9 347.822 9.84V9.78C348.202 9.68 348.502 9.48 348.702 9.28C349.062 8.92 349.162 8.56 349.302 8.18L349.622 7.24C349.762 6.86 349.882 6.7 349.962 6.62C350.082 6.5 350.222 6.48 350.362 6.48C350.502 6.48 350.682 6.5 350.882 6.62L351.142 5.3C350.762 5.14 350.362 5.08 350.022 5.08C349.742 5.08 349.542 5.12 349.282 5.22C348.842 5.4 348.482 5.68 348.122 6.76L347.742 7.88C347.642 8.16 347.482 8.56 347.222 8.8C346.882 9.12 346.402 9.14 346.062 9.14H344.702V5.28ZM357.035 5.08C355.595 5.08 354.535 5.66 353.895 6.34C352.895 7.42 352.695 8.96 352.695 10.14C352.695 11.32 352.895 12.86 353.895 13.94C354.535 14.62 355.595 15.2 357.035 15.2C358.475 15.2 359.535 14.62 360.175 13.94C361.175 12.86 361.375 11.32 361.375 10.14C361.375 8.96 361.175 7.42 360.175 6.34C359.535 5.66 358.475 5.08 357.035 5.08ZM359.415 10.58C359.415 11.5 359.415 12.52 358.715 13.26C358.435 13.56 357.915 13.92 357.035 13.92C356.155 13.92 355.635 13.56 355.355 13.26C354.655 12.52 354.655 11.5 354.655 10.58V9.7C354.655 8.78 354.655 7.76 355.355 7.02C355.635 6.72 356.155 6.36 357.035 6.36C357.915 6.36 358.435 6.72 358.715 7.02C359.415 7.76 359.415 8.78 359.415 9.7V10.58ZM372.399 5.28H370.519L365.679 12.78V5.28H363.919V15H365.799L370.639 7.5V15H372.399V5.28ZM365.539 1.16C365.459 1.4 365.439 1.6 365.439 1.84C365.439 2.4 365.599 2.98 366.299 3.38C366.819 3.68 367.599 3.78 368.159 3.78C368.719 3.78 369.499 3.68 370.019 3.38C370.719 2.98 370.879 2.4 370.879 1.84C370.879 1.6 370.859 1.4 370.779 1.16L369.379 1.28C369.499 1.72 369.359 2.12 369.079 2.34C368.839 2.52 368.459 2.58 368.159 2.58C367.859 2.58 367.479 2.52 367.239 2.34C366.959 2.12 366.819 1.72 366.939 1.28L365.539 1.16Z"
+                                                                    fill="#0D49B4"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="app-header__top-col">
+                                                <div class="svg-phone">
+                                                    <svg height="48" viewBox="0 0 192 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-phone__image">
+                                                        <text x="0" y="14" class="svg-phone__text-top">Москва, Мичуринский пр-т, 6</text>
+                                                        <text x="0" y="40" class="svg-phone__text-bottom">
+                                                            8 (499) 333-30-00
+                                                        </text>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="app-header__top-col">
+                                                <div class="svg-phone">
+                                                    <svg height="48" viewBox="0 0 192 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-phone__image">
+                                                        <text x="0" y="14" class="svg-phone__text-top">Платные госпитализации 24/7</text>
+                                                        <text x="0" y="40" class="svg-phone__text-bottom">
+                                                            8 (499) 719-81-00
+                                                        </text>
+                                                    </svg>
+                                                </div>
+                                            </div> <!----></div>
+                                    </div>
+                                    <div class="app-header__nav">
+                                        <div class="app-header__nav-container lo-container">
+                                            <div class="app-header__nav-col">
+                                                <div class="site-nav"><a href="https://www.fgu-obp.ru/about/about_obp.php" class="site-nav__item">О больнице</a><a href="https://www.fgu-obp.ru/paid_services/person.php" class="site-nav__item">Пациентам</a><a href="https://www.fgu-obp.ru/sp/list.php" class="site-nav__item">Специалисты</a><a href="https://www.fgu-obp.ru/higt_technology/" class="site-nav__item">Высокие технологии. Квоты</a><a href="https://www.fgu-obp.ru/scientific_effort/main.php"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          class="site-nav__item">Публикации</a><a
+                                                    href="https://www.fgu-obp.ru/about/contact.php" class="site-nav__item">Контакты</a></div>
+                                            </div>
+                                            <div class="app-header__nav-col"><a href="/" class="user-btn is-active nuxt-link-active">
+                                                <svg class="spr-icon user-btn__icon spr-icon-user">
+                                                    <use xlink:href="#icon-user" class="spr-icon__use"></use>
+                                                </svg>
+                                                <span class="user-btn__text">Личный кабинет</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lo-aside__nav-mobile-wrap">
+                                    <div class="lo-aside__nav-mobile">
+                                        <div id="nav_mobile_swiper_15" class="nav-mobile swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-free-mode">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide swiper-slide-active"><a href="/sign/" class="nav-mobile-link" tabindex="-1" data-slide="0"><span class="nav-mobile-link__content"><svg class="spr-icon nav-mobile-link__icon spr-icon-calendar-check"><use xlink:href="#icon-calendar-check" class="spr-icon__use"></use></svg> <span class="nav-mobile-link__text">Запись к врачу</span></span></a></div>
+                                                <div class="swiper-slide swiper-slide-next"><a href="/analyzes/" class="nav-mobile-link" tabindex="-1" data-slide="1"><span class="nav-mobile-link__content"><svg class="spr-icon nav-mobile-link__icon spr-icon-lab"><use xlink:href="#icon-lab" class="spr-icon__use"></use></svg> <span class="nav-mobile-link__text">Анализы</span></span></a></div>
+                                                <div class="swiper-slide"><a href="/research/" aria-current="page" class="nav-mobile-link nuxt-link-exact-active nuxt-link-active" tabindex="-1" data-slide="2"><span class="nav-mobile-link__content"><svg class="spr-icon nav-mobile-link__icon spr-icon-research"><use xlink:href="#icon-research" class="spr-icon__use"></use></svg> <span class="nav-mobile-link__text">Исследования</span></span></a></div>
+                                                <div class="swiper-slide"><a href="/profile/" class="nav-mobile-link" tabindex="-1" data-slide="3"><span class="nav-mobile-link__content"><svg class="spr-icon nav-mobile-link__icon spr-icon-user"><use xlink:href="#icon-user" class="spr-icon__use"></use></svg> <span class="nav-mobile-link__text">Профиль</span></span></a></div>
+                                                <div class="swiper-slide">
+                                                    <button tabindex="-1" class="nav-mobile-link"><span class="nav-mobile-link__content"><svg class="spr-icon nav-mobile-link__icon spr-icon-logout"><use xlink:href="#icon-logout" class="spr-icon__use"></use></svg> <span class="nav-mobile-link__text">Выйти</span></span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lo-row lo-main">
+                        <div class="lo-cell">
+                            <div class="lo-block">
+                                <div class="lo-container">
+                                    <div class="lo-aside app-page">
+                                        <div class="lo-aside__nav">
+                                            <div class="app-back-link" style="min-height:24px"><a href="#" class="top-back-link" style="position:relative;top:8px"><span class="top-back-link__content"><svg class="spr-icon top-back-link__icon spr-icon-chevron-left"><use xlink:href="#icon-chevron-left" class="spr-icon__use"></use></svg> <span class="top-back-link__text">На главную</span></span></a></div>
+                                            <nav class="nav-desktop lo-aside__nav-desktop">
+                                                <div class="nav-desktop__item-wrap"><a href="/sign/" class="nav-desktop__item"><span class="nav-desktop__item-content"><svg class="spr-icon nav-desktop__icon spr-icon-calendar-check"><use xlink:href="#icon-calendar-check" class="spr-icon__use"></use></svg> <span class="nav-desktop__text">Запись к врачу</span></span></a></div>
+                                                <div class="nav-desktop__item-wrap"><a href="/analyzes/" class="nav-desktop__item"><span class="nav-desktop__item-content"><svg class="spr-icon nav-desktop__icon spr-icon-lab"><use xlink:href="#icon-lab" class="spr-icon__use"></use></svg> <span class="nav-desktop__text">Анализы</span></span></a> <!----></div>
+                                                <div class="nav-desktop__item-wrap"><a href="/research/" aria-current="page" class="nav-desktop__item nuxt-link-exact-active nuxt-link-active"><span class="nav-desktop__item-content"><svg class="spr-icon nav-desktop__icon spr-icon-research"><use xlink:href="#icon-research" class="spr-icon__use"></use></svg> <span class="nav-desktop__text">Исследования</span></span></a> <!----></div>
+                                                <div class="nav-desktop__item-wrap"><a href="/profile/" class="nav-desktop__item"><span class="nav-desktop__item-content"><svg class="spr-icon nav-desktop__icon spr-icon-user"><use xlink:href="#icon-user" class="spr-icon__use"></use></svg> <span class="nav-desktop__text">Профиль</span></span></a> <!----></div>
+                                                <div class="nav-desktop__item-wrap"><!---->
+                                                    <button class="nav-desktop__item"><span class="nav-desktop__item-content"><svg class="spr-icon nav-desktop__icon spr-icon-logout"><use xlink:href="#icon-logout" class="spr-icon__use"></use></svg> <span class="nav-desktop__text">Выйти</span></span></button>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="lo-aside__main"><!----> <!---->
+                                            <div class="page-loader-wrapper">
+                                                <div class="page-title">
+                                                    <h1 class="page-title__title title-h1">Новый пропуск</h1>
+                                                </div>
+                                                <div class="page-loader" style="margin-top: 0px;">
+                                                    <div class="page-sections">
+                                                        <div class="page-section">
+                                                            <div class="pass app-region">
+                                                                <div class="pass__head">
+                                                                    <h2 class="pass__heading">Пропуск</h2>
+                                                                    <a class="pass__expired" name="fake-link-to-prevent-date-parsing">действителен до: <span class="nobr">04.08.2025</span></a>
+                                                                </div>
+                                                                <div class="pass__data">
+                                                                    <div class="pass__row pass__row--status">
+                                                                        <div class="pass__param">Статус</div>
+                                                                        <div class="pass__value">
+                                                                            <div class="badge badge--info">Оплачено</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pass__row">
+                                                                        <div class="pass__param">Номер автомобиля</div>
+                                                                        <div class="pass__value">Х000ХХ</div>
+                                                                    </div>
+                                                                    <div class="pass__row">
+                                                                        <div class="pass__param">Дата прибытия</div>
+                                                                        <div class="pass__value">04.08.2025</div>
+                                                                    </div>
+                                                                    <div class="pass__row pass__row--highlighted">
+                                                                        <div class="pass__param">Стоимость пропуска</div>
+                                                                        <div class="pass__value">600₽</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pass__footer">
+                                                                    <a class="pass__issued" name="fake-link-to-prevent-date-parsing">
+                                                                        Выдан <span class="nobr">03.08.2025</span> в&nbsp;<span class="nobr">10:00</span>
+                                                                    </a>
+                                                                    <div class="pass__download">
+                                                                        <a class="button" href="#">
+                                                                            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                                <path d="M9 11.681a.824.824 0 0 1-.281-.047.654.654 0 0 1-.244-.159l-2.7-2.7a.711.711 0 0 1-.206-.525c0-.213.069-.388.206-.525a.756.756 0 0 1 .534-.216.695.695 0 0 1 .535.197L8.25 9.113V3.75c0-.212.072-.39.216-.535A.725.725 0 0 1 9 3c.213 0 .39.072.535.215a.728.728 0 0 1 .215.535v5.363l1.406-1.407a.695.695 0 0 1 .535-.197.756.756 0 0 1 .534.216.711.711 0 0 1 .206.525.711.711 0 0 1-.206.525l-2.7 2.7a.654.654 0 0 1-.244.159.824.824 0 0 1-.281.047ZM4.5 15c-.412 0-.765-.147-1.059-.44A1.445 1.445 0 0 1 3 13.5V12c0-.213.072-.39.215-.535a.727.727 0 0 1 .535-.215c.212 0 .39.072.535.215A.727.727 0 0 1 4.5 12v1.5h9V12c0-.213.072-.39.216-.535a.725.725 0 0 1 .534-.215c.213 0 .39.072.534.215A.726.726 0 0 1 15 12v1.5c0 .412-.147.766-.44 1.06-.294.293-.648.44-1.06.44h-9Z"/>
+                                                                            </svg>
+                                                                            Скачать пропуск
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pass app-region">
+                                                                <div class="pass__head">
+                                                                    <h2 class="pass__heading">Пропуск</h2>
+                                                                </div>
+                                                                <div class="pass__data">
+                                                                    <div class="pass__row pass__row--status">
+                                                                        <div class="pass__param">Статус</div>
+                                                                        <div class="pass__value">
+                                                                            <div class="badge badge--danger">Отклонено</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pass__row">
+                                                                        <div class="pass__param">Номер автомобиля</div>
+                                                                        <div class="pass__value">Х000ХХ</div>
+                                                                    </div>
+                                                                    <div class="pass__row">
+                                                                        <div class="pass__param">Дата прибытия</div>
+                                                                        <div class="pass__value">04.08.2025</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lo-row lo-bottom">
+                        <div class="lo-cell">
+                            <div class="lo-block">
+                                <div class="app-footer">
+                                    <div class="app-footer__container lo-container">
+                                        <div class="app-footer__col">
+                                            <div class="app-footer__text">
+                                                ФГБУ Объединенная больница с поликлиникой Управления делами Президента
+                                                Российской Федерации
+                                                <span br-768=""></span>
+                                                Россия, 119285, Москва, Мичуринский проспект, 6. Часы работы: пн-пт с
+                                                8:00 до 20:00 сб с 9.00 до 18.00, госпитализация круглосуточно
+                                                <br> <a href="#" class="link">Лицензия № ФС-99-01-009591 от 29 ноября 2018 года</a>
+                                                (действует бессрочно)
+                                                <br> <a href="#" class="link">Политика обработки и защиты персональных данных</a></div>
+                                        </div>
+                                        <div class="app-footer__col"><!----></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!----></div>
+            </div>
+        </div>
+
+
+    <!-- .mfp -->
+        <div class="window mfp-hide" id="login">
+            <button class="window__close mfp-close" type="button">
+                Close
+            </button>
+            <div class="login">
+                <h2 class="login__heading">
+                    Magnific Popup!
+                </h2>
+                <div class="login__body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur debitis eligendi fugiat provident sed, velit! At debitis dolore fuga ipsum laudantium nemo reiciendis temporibus voluptates? Ab, accusantium aspernatur cumque dicta ducimus eaque eius eos eum in maxime nihil nulla numquam velit. Accusamus, aliquid atque beatae culpa cupiditate fugiat iure iusto non odit pariatur quae saepe ullam voluptatibus.
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
+        <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/inputmask/jquery.inputmask.min.js"></script>
+        <script src="../vendors/inputmask.phone/inputmask.phone.extensions.min.js"></script>
+        <script src="../vendors/inputmask.phone/phone-codes/phone-ru.min.js"></script>
+        <script src="../scripts/scripts.js"></script>
+
+    </body>
+</html>
