@@ -1,0 +1,58 @@
+.profile {
+    display: grid;
+    grid-template-columns: 276px 880px;
+    gap: 24px;
+}
+    .profile__sidebar {
+
+    }
+        .profile__back {
+
+        }
+
+        .profile__nav {
+
+        }
+            .profile__link {
+
+            }
+                .profile__icon {
+
+                }
+
+        .profile__footer {
+
+        }
+            .profile__call {
+
+            }
+                .profile__call-label {
+
+                }
+
+                .profile__call-phone {
+
+                }
+
+                .profile__instruction {
+
+                }
+
+            .profile__feedback {
+
+            }
+
+    .profile__body {
+
+    }
+        .profile__page-heading {
+
+        }
+
+        .profile__page-description {
+
+        }
+
+        .profile__content {
+
+        }
