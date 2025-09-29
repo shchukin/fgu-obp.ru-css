@@ -1,0 +1,12 @@
+.page-title {
+    flex-wrap: wrap;
+}
+
+.page-title__description {
+    margin-top: 32px;
+    padding-bottom: 8px;
+    width: 100%;
+    flex-shrink: 0;
+    font-size: 18px;
+    line-height: 22px;
+}
