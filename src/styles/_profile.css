@@ -42,6 +42,7 @@
                         text-decoration: none;
                     }
 
+                    .profile__link--current,
                     .profile__link:hover {
                         color: #3575e7;
                     }
