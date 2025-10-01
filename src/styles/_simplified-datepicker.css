@@ -1,0 +1,57 @@
+.simplified-datepicker {
+    border: 1px solid #D8DEE7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+    .simplified-datepicker__handler {
+
+    }
+        .simplified-datepicker__icon {
+
+        }
+
+        .simplified-datepicker__label {
+
+        }
+
+        .simplified-datepicker__chevron {
+
+        }
+
+    .simplified-datepicker__dropdown {
+        max-height: 340px;
+        overflow-y: auto;
+    }
+        .simplified-datepicker__suggest {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-top: 1px solid #D8DEE7;
+            padding: 16px 24px;
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .simplified-datepicker__suggest:first-child {
+            border-top: none;
+        }
+
+        .simplified-datepicker__suggest:hover {
+            background-color: #F6F6F6;
+        }
+
+        .simplified-datepicker__suggest:last-child {
+
+        }
+
+            .simplified-datepicker__note {
+                margin-left: 8px;
+                font-size: 13px;
+                line-height: 13px;
+                color: #90A2AB;
+            }

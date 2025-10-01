@@ -9,7 +9,9 @@
     }
 
     .new-pass__body {
-
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
         .new-pass__field {
             display: flex;

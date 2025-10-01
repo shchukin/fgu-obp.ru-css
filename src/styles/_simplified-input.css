@@ -13,7 +13,7 @@
         border-radius: 4px;
         font-family: inherit;
         font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
-        line-height: 24px;
+        line-height: 19px;
         color: #000000;
         opacity: 1; /* reset select:disabled default fade on iOS */
         -webkit-tap-highlight-color: transparent;
