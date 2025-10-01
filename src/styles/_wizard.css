@@ -21,8 +21,11 @@
         }
             .wizard__check {
                 position: absolute;
-                inset: 0;
-                margin: auto;
+                top: 4px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
                 fill: currentColor;
                 display: none;
             }
@@ -78,4 +81,83 @@
 
 .wizard__step--passed:hover {
     color: #3575e7;
+}
+
+
+
+@media (width < 768px) {
+
+    .wizard {
+        gap: 12px;
+    }
+
+    @media (width < 350px) {
+        .wizard {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+
+        .wizard__step {
+            gap: 8px;
+        }
+            .wizard__index {
+                font-size: 32px;
+                line-height: 30px;
+            }
+
+            .wizard__step:not(.wizard__step--current) .wizard__index {
+                font-size: 24px;
+            }
+                .wizard__check {
+
+                }
+
+            .wizard__label {
+                font-size: 15px;
+                line-height: 15px;
+            }
+
+            @media (width < 350px) {
+                .wizard__label {
+                    font-size: 14px;
+                }
+            }
+
+            .wizard__step:not(.wizard__step--current) .wizard__label {
+                display: none;
+            }
+
+        .wizard__arrow {
+            min-width: 20px;
+        }
+            .wizard__chevron {
+
+            }
+
+
+    .wizard__step--current {
+
+    }
+
+
+    .wizard__step--current + .wizard__arrow {
+
+    }
+
+
+
+    .wizard__step--passed {
+
+    }
+        .wizard__step--passed .wizard__index {
+            text-indent: 0;
+        }
+        .wizard__step--passed .wizard__check {
+            display: none;
+        }
+
+    .wizard__step--passed:hover {
+
+    }
 }

@@ -24,3 +24,9 @@
         --container-padding: 16px;
     }
 }
+
+@media (width < 350px) {
+    :root {
+        --container-padding: 12px;
+    }
+}
