@@ -144,6 +144,16 @@ gulp.task('temp', function () {
 });
 
 
+// Legacy: copy
+
+gulp.task('legacy', function () {
+    return gulp.src('src/legacy/**/*', {encoding: false})
+        .pipe(plumber())
+        .pipe(gulp.dest('build/legacy/'))
+        ;
+});
+
+
 // Content: copy
 
 gulp.task('content', function () {
@@ -268,7 +278,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'legacy', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
