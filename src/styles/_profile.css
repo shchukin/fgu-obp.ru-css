@@ -28,35 +28,39 @@
                 padding-top: 28px;
                 padding-bottom: 28px;
             }
-                .profile__link {
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                    padding: 12px 24px;
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #000000;
-                    text-decoration: none;
-                }
+                .profile__ribbon {
 
-                .profile__link:hover {
-                    color: #3575e7;
                 }
-                    .profile__nav-icon {
-                        margin-top: -2px;
-                        flex-shrink: 0;
-                        fill: #0D49B4;
+                    .profile__link {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        padding: 12px 24px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #000000;
+                        text-decoration: none;
                     }
 
-                    .profile__link:hover .profile__nav-icon {
-                        fill: #3575e7;
+                    .profile__link:hover {
+                        color: #3575e7;
                     }
+                        .profile__nav-icon {
+                            margin-top: -2px;
+                            flex-shrink: 0;
+                            fill: #0D49B4;
+                        }
 
-                .profile__separator {
-                    height: 1px;
-                    margin: 10px 24px;
-                    background-color: #D9D9D9;
-                }
+                        .profile__link:hover .profile__nav-icon,
+                        .profile__link--current .profile__nav-icon {
+                            fill: currentColor;
+                        }
+
+                    .profile__separator {
+                        height: 1px;
+                        margin: 10px 24px;
+                        background-color: #D9D9D9;
+                    }
 
         .profile__footer {
             margin-top: 24px;
@@ -68,30 +72,32 @@
                     padding: 10px 24px 7px;
                 }
 
-            .profile__call-label {
+            .profile__call {
                 margin-top: 20px;
-                margin-left: 24px;
-                font-size: 14px;
-                line-height: 24px;
-                color: #8D8D8D;
             }
+                .profile__call-label {
+                    margin-left: 24px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #8D8D8D;
+                }
 
-            .profile__call-phone {
-                margin-top: 4px;
-                margin-left: 24px;
-                display: block;
-                font-size: 16px;
-                line-height: 24px;
-                color: #000000;
-                text-decoration: none;
-            }
+                .profile__call-phone {
+                    margin-top: 4px;
+                    margin-left: 24px;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000000;
+                    text-decoration: none;
+                }
 
-            .profile__instruction {
-                margin-top: 32px;
-                margin-left: 24px;
-                font-size: 18px;
-                line-height: 22px;
-            }
+                .profile__instruction {
+                    margin-top: 32px;
+                    margin-left: 24px;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
 
     .profile__body {
 
@@ -102,7 +108,12 @@
             gap: 32px 24px;
         }
             .profile__heading {
-
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: var(--font-heading);
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 40px;
             }
 
             .profile__actions {
@@ -117,6 +128,148 @@
             }
 
         .profile__content {
-            margin-top: 32px;;
+            margin-top: 32px;
         }
+
+        
+        
+@media (width < 768px) {
+
+    .profile {
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 235px;
+        display: block;
+    }
+        .profile__sidebar {
+
+        }
+            .profile__back {
+                display: none;
+            }
+
+            .profile__sticky-part {
+                margin-top: 0;
+                position: static;
+            }
+                /* stylelint-disable */
+                .profile__navigation {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    overflow-x: auto;
+                    margin-left: calc(-1 * var(--container-padding));
+                    margin-right: calc(-1 * var(--container-padding));
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                }
+                /* stylelint-enable */
+
+                .profile__navigation.app-region {
+                    background-color: transparent;
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+                    .profile__ribbon {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 16px;
+                        width: fit-content;
+                    }
+                        .profile__link {
+                            flex-shrink: 0;
+                            padding: 7px 10px;
+                            background-color: #FFFFFF;
+                            border-radius: 4px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            white-space: nowrap;
+                        }
+
+                        .profile__link--current,
+                        .profile__link--current:hover {
+                            background-color: #0D49B4;
+                            color: #FFFFFF;
+                        }
+                            .profile__nav-icon {
+                                width: 14px;
+                                height: 14px;
+                            }
+
+                            .profile__link--current .profile__nav-icon {
+
+                            }
+
+                        .profile__separator {
+                            display: none;
+                        }
+
+            .profile__footer {
+                position: absolute;
+                bottom: 40px;
+                left: 0;
+                right: 0;
+                margin-top: 0;
+                display: flex;
+                align-items: flex-start;
+            }
+                .profile__feedback {
+                    margin-top: 20px;
+                }
+                    .profile__feedback .button {
+
+                    }
+
+                .profile__call {
+                    order: -1;
+                    margin-top: 0;
+                    flex-grow: 1;
+                }
+                    .profile__call-label {
+                        margin-left: 0;
+                    }
+
+                    .profile__call-phone {
+                        margin-top: 0;
+                        margin-left: 0;
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    .profile__instruction {
+                        margin-top: 16px;
+                        margin-left: 0;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+
+        .profile__body {
+            margin-top: 41px;
+        }
+            .profile__head {
+                display: block;
+            }
+                .profile__heading {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+                .profile__actions {
+                    margin-top: 24px;
+                }
+                    .profile__actions .button {
+                        width: 100%;
+                        border-radius: 4px;
+                    }
+
+                .profile__description {
+                    margin-top: 24px;
+                    margin-bottom: -8px;
+                    font-size: 16px;
+                    line-height: 19px
+                }
+
+            .profile__content {
+                margin-top: 24px;
+            }
+}
 

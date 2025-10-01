@@ -7,7 +7,7 @@
     margin-right: auto;
 }
 
-@media (width < 740px) {
+@media (width < 768px) {
 
     .container {
         width: auto;
