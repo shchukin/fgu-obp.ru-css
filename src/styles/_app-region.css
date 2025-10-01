@@ -1,0 +1,10 @@
+.app-region {
+
+}
+
+@media (width < 768px) {
+
+    .app-region {
+        border-radius: 12px;
+    }
+}
