@@ -75,4 +75,33 @@
     });
 
 
+    $('.simplified-datepicker__handler').on('click', function () {
+        $(this).closest('.simplified-datepicker').toggleClass('simplified-datepicker--expanded');
+    });
+
+    $('.simplified-datepicker__suggest').on('click', function (){
+        const value = $(this).html();
+        $(this).closest('.simplified-datepicker').find('.simplified-datepicker__value').html(value);
+        $(this).closest('.simplified-datepicker').removeClass('simplified-datepicker--expanded');
+    });
+
+
+    /* hide popup by overlay click ( goo.gl/SJG2Hw ) */
+
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.simplified-datepicker').length) {
+            $('.simplified-datepicker').removeClass('simplified-datepicker--expanded');
+        }
+    });
+
+
+    /* hide popup by Esc press */
+
+    $(document).on('keyup', function(event) {
+        if (event.keyCode === 27) {
+            $('.simplified-datepicker').removeClass('simplified-datepicker--expanded');
+        }
+    });
+
+
 })(jQuery);

@@ -1,0 +1,17 @@
+.day {
+    display: flex;
+    vertical-align: baseline;
+    align-items: baseline;
+    gap: 8px;
+}
+    .day__number {
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    .day__note {
+        font-size: 13px;
+        line-height: 13px;
+        color: #90A2AB;
+    }

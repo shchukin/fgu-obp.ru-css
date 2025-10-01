@@ -9,17 +9,21 @@
     }
 
     .new-pass__body {
+        margin-top: 16px;
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
         .new-pass__field {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 40px;
         }
             .new-pass__label {
                 flex-grow: 1;
+                margin-top: 17px;
+                font-size: 16px;
+                line-height: 19px;
             }
 
             .new-pass__widget {
