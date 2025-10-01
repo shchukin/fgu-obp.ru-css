@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>.nobr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/app.css">
         <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
@@ -14,11 +15,10 @@
             <h1>.nobr</h1>
 
             <p>
-                A helper component for text formatting: to prevent line breaks. It makes sense
-                to use in cases where it is not possible to use non-breaking hyphens or spaces.
-                For example:
-                <span class="nobr"><a class="link link--fake" href="tel:+71234567890">+7 (123) 456-78-90</a></span>
-                ← a phone number in a long text which comes in already formatted form from the database.
+                Вспомогательный компонент для форматирования текста: запрещает переносы. Имеет смысл использовать
+                в случаях когда не удаётся использовать неразрывные тире или пробелы. Например, номер телефона
+                внутри длинного текста: <span class="nobr"><a class="link link--fake" href="tel:+71234567890">+7 (123) 456-78-90</a></span>,
+                который приходит в уже отформатированном виде из базы.
             </p>
 
 

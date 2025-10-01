@@ -1,3 +1,34 @@
 .new-pass {
-
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 24px;
 }
+    .new-pass__progress {
+
+    }
+
+    .new-pass__body {
+
+    }
+        .new-pass__field {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+            .new-pass__label {
+                flex-grow: 1;
+            }
+
+            .new-pass__widget {
+                flex-basis: 561px;
+                width: 561px;
+            }
+
+    .new-pass__price {
+
+    }
+
+    .new-pass__footer {
+
+    }

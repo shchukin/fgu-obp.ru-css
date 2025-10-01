@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>.choice</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/app.css">
         <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
@@ -104,11 +105,11 @@
             <h2>.choice--full-width</h2>
 
             <p>
-                By default, the <b><i>.choice</i></b> component has a width based on the text inside
-                <b class="nobr"><i>(fit-content)</i></b>. However, in some cases, we want it to be <span class="nobr">full-width</span>,
-                for example, in a list of options in the sidebar or in a dropdown. In this case,
-                we want to move the cursor over all checkboxes and be able to click them even if
-                some of them are shorter.
+                По умолчанию, элемент <b><i>.choice</i></b> имеет ширину, соответствующую его содержимому
+                (<b class="nobr"><i>fit-content</i></b>). Однако в некоторых случаях требуется ширина в 100%. Например,
+                в списке опций в сайдбаре или в выпадающем меню. В таких случаях необходимо, чтобы элементы
+                были доступны для наведения курсора и клика по всей своей ширине, даже если некоторые
+                из них короче других.
             </p>
 
 
@@ -139,11 +140,11 @@
 
             <br>
             <p>
-                Although, if it’s not a tiny sidebar but a wide area, it feels weird to be able
-                to hover or click too far to the right, like in the example above. It makes sense
-                to wrap checkboxes in the vertical <b class="nobr"><i>fit-content</i></b> flex or
-                <b><i>inline-flex</i></b>, so all checkboxes will be stretch to <span class="nobr">full-width</span> but
-                whole thing will be limited by the width of the longest item:
+                С другой стороны, если это не узенький сайдбар, а просто широкая область
+                как в примере выше, то наведение и нажатие на пустоту далеко справа ощущается странно.
+                Имеет смысл обернуть чекбоксы вертикальным флексом с <b class="nobr"><i>fit-content</i></b>
+                или <b><i>inline-flex</i></b>`ом. Тогда чекбоксы буду растягиваться на всю
+                ширину родителя, но вся секция будет ограничена шириной самого длинного элемента.
             </p>
 
             <div style="display: flex; width: fit-content; flex-direction: column;">

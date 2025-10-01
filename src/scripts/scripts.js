@@ -11,7 +11,7 @@
         }
     }
 
-    $('select.input__widget').each(function () {
+    $('select.simplified-input__widget').each(function () {
         selectPlaceholder($(this));
     }).on('change', function () {
         selectPlaceholder($(this));
@@ -23,16 +23,16 @@
         $element.css('height', ($element[0].scrollHeight + 2 * parseInt($element.css('border-width'), 10)) + 'px');
     }
 
-    $('.input--expandable .input__widget').each(function () {
+    $('.input--expandable .simplified-input__widget').each(function () {
         expandTextarea($(this));
     }).on('input', function () {
         expandTextarea($(this));
     });
 
     /* Error field */
-    $('.input__widget').on('focus', function () {
-        $(this).parents('.input').removeClass('input--error');
-        $(this).parents('.input').nextUntil(':not(.helper--error)').remove();
+    $('.simplified-input__widget').on('focus', function () {
+        $(this).parents('.simplified-input').removeClass('input--error');
+        $(this).parents('.simplified-input').nextUntil(':not(.helper--error)').remove();
     });
 
 

@@ -4,27 +4,29 @@
         <meta charset="utf-8">
         <title>.wysiwyg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/app.css">
         <link rel="stylesheet" href="../styles/styles.css">
     </head>
-    <body>
+    <body style="background: white">
 
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
             <h1>.wysiwyg</h1>
             <p>
-                This component sets styles for tags such <b><i>&lt;p&gt;</i></b>, <b><i>&lt;ul&gt;</i></b>, <b><i>&lt;img&gt;</i></b>, etc.
+                Внутри этого компонента задаём стили для тегов вроде <b><i>&lt;p&gt;</i></b>, <b><i>&lt;ul&gt;</i></b>, <b><i>&lt;img&gt;</i></b>.
             </p>
             <p>
-                On one hand, we should never match on tags globally or apply styles to tags for
-                the sake of modularity. We always use classes. In other words it's a bad practise to apply styles directly to tags.
+                С одной стороны, мы не матчимся на теги, а всегда используем классы. Ради модульности.
+                Т.е. нельзя задавать стили напрямую тегам.
             </p>
             <p>
-                On the other hand, there are cases, such a user generated content or user agreement styling
-                where we don’t control the HTML code.
+                С другой стороны, бывают случаи, где мы не контролируем HTML‑код: user generated контент,
+                стилизация лицензионного соглашения и т.д.
             </p>
             <p>
-                This is where we wrap text in a <b><i>.wysiwyg</i></b> class, and all the tags inside inherit the defined styles.
+                В таких случаях используем компонент <b><i>.wysiwyg</i></b>, и все теги
+                в контексте этого компонента получат заданные стили.
             </p>
 
 
@@ -36,7 +38,7 @@
                 <h2>Suspendisse potenti</h2>
                 <h3>Donec lacinia adipiscing quam</h3>
                 <h4>Nulla lacinia justo at lectus</h4>
-                <p><em>Lorem ipsum</em> dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus finibus ipsum a cursus. Nullam a tincidunt est. <strong>Curabitur bibendum</strong>, tellus ac fermentum aliquam, ante dui consectetur nulla, vitae consectetur ex sem non mi. Aliquam non <a href="#">mollis urna</a>. Quisque at odio neque. Vestibulum cursus massa eu enim suscipit, at feugiat neque semper. Nulla facilisis blandit ultrices. Aenean condimentum ante vitae hendrerit mattis. Vivamus elementum <a href="#">https://www.google.com/search?q=foo+bar+baz&num=10&sca_esv=5d97f5e538120ab7&sxsrf=AE3TifP8HCWotK4Ua95MGcqhRFDd5eleJQ%3A1757652617457&ei=iabDaKjVG8nx4-EP0Mui0Aw&ved=0ahUKEwjovZufttKPAxXJ-DgGHdClCMoQ4dUDCBA&uact=5&oq=foo+bar+baz&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2ZvbyBiYXIgYmF6MgUQABiABDIGEAAYBRgeMgQQABgeMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIEMgUQABjvBUjkE1D4CljHEnACeAGQAQCYAWygAbMBqgEDMS4xuAEmkdfFFDdfdsmnnbQRFksdfnasdqwerfnOFnOeQNFQNFAFDNnDyAEA-AEBmAIEoAK-AcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMzLjGgB5IHsgcDMS4xuAe4AcIHAzAuNMgHCA&sclient=gws-wiz-serp</a> vel facilisis justo fringilla vel. Nulla a elit nec leo tempus rhoncus non nec.</p>
+                <p><em>Lorem ipsum</em> dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus finibus ipsum a cursus. Nullam a tincidunt est. <strong>Curabitur bibendum</strong>, tellus ac fermentum aliquam, ante dui consectetur nulla, vitae consectetur ex sem non mi. Aliquam non <a href="#">mollis urna</a>. Quisque at odio neque. Vestibulum cursus massa eu enim suscipit, at feugiat neque semper. Nulla facilisis blandit ultrices. Aenean condimentum ante vitae hendrerit mattis. Vivamus elementum <a href="#">https://www.google.com/search?sxsrf=ACYBGNSVxuJiaLylaOSmD6ro4JCzzeoU9w%3A1579686484240&source=hp&ei=VBooXsHXDNOP4-EPre-W8As&q=starpro&oq=starpro&gs_l=psy-ab.3..0l5j0i10l2j0j0i10j0.199.2861..3121...3.0..2.469.2765.0j1j4j2j2......0....1..gws-wiz.......35i39j0i131j0i67.B_EBXjEGatI&ved=0ahUKEwjB0f3d9pbnAhXTxzgGHa23Bb4Q4dUDCAY&uact=5</a> vel facilisis justo fringilla vel. Nulla a elit nec leo tempus rhoncus non nec.</p>
                 <hr>
                 <blockquote>
                     Morbi feugiat tellus vel justo pharetra vel hendrerit tortor congue. Vivamus dui leo, porttitor eget ultricies non, tincidunt nec leo. In hac habitasse platea dictumst. Pellentesque mattis sagittis iaculis. Pellentesque lacinia neque in tortor viverra volutpat suscipit tortor placerat. Suspendisse potenti. Nulla purus tortor, hendrerit sit amet tristique ut, lacinia at nibh. Vivamus vehicula lacus id est viverra eget euismod lorem blandit. Class aptent taciti sociosqu

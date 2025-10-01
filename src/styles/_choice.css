@@ -55,7 +55,7 @@
 
 .choice__label:hover ~ .choice__icon {
     background-color: transparent;
-    border-color: var(--input-border-hover-and-focus);
+    border-color: var(--input-border-hover);
 }
 
 
