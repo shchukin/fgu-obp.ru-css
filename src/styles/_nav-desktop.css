@@ -1,0 +1,38 @@
+.nav-desktop {
+
+}
+    .nav-desktop__item-wrap {
+
+    }
+        .nav-desktop__item {
+            padding: 12px 24px;
+        }
+
+        .nav-desktop__item-wrap:first-child .nav-desktop__item {
+            padding-top: 32px;
+        }
+
+        .nav-desktop__item-wrap:last-child .nav-desktop__item {
+            padding-bottom: 32px;
+        }
+
+.nav-desktop__item-content .spr-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-desktop__item-content .spr-icon__use {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-desktop__icon {
+    margin-top: -2px;
+    margin-right: 8px;
+}
+
+.nav-desktop__text {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+}

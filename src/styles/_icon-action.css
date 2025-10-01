@@ -1,0 +1,24 @@
+.icon-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D49B4;
+    text-decoration: none;
+    cursor: pointer;
+}
+    .icon-action__icon {
+        margin-top: -2px;
+        vertical-align: top;
+        stroke: currentColor;
+    }
+
+
+.icon-action:hover {
+    color: #3575e7;
+}
