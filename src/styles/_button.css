@@ -2,10 +2,28 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
+}
+
+.button--outline {
+    background-color: transparent;
+    border-color: #0D49B4;
+    color: #0D49B4;
+}
+
+.button--smaller-polina-variant {
+    padding: 9px 24px 8px;
+}
+
+.button--outline:hover,
+.button--outline:focus {
+    background: #3575e7;
+    border-color: #3575e7;
+    color: #FFFFFF;
 }
 
 .button__icon {
+    margin-top: -2px;
     flex-shrink: 0;
     vertical-align: top;
     fill: currentColor;

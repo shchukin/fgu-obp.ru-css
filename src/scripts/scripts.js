@@ -76,7 +76,9 @@
 
 
     $('.simplified-datepicker__handler').on('click', function () {
-        $(this).closest('.simplified-datepicker').toggleClass('simplified-datepicker--expanded');
+        if( ! $(this).parents('.simplified-datepicker').hasClass('simplified-datepicker--readonly') ) {
+            $(this).closest('.simplified-datepicker').toggleClass('simplified-datepicker--expanded');
+        }
     });
 
     $('.simplified-datepicker__suggest').on('click', function (){

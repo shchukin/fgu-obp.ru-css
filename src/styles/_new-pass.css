@@ -32,9 +32,25 @@
             }
 
     .new-pass__price {
-
+        border-top: 1px solid #0D49B4;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
     }
+        .new-pass__price-label {
+            font-size: 18px;
+            line-height: 22px;
+            color: #0D49B4;
+        }
+
+        .new-pass__price-value {
+            font-size: 18px;
+            line-height: 22px;
+            color: #0D49B4;
+        }
 
     .new-pass__footer {
-
+        display: flex;
+        justify-content: space-between;
     }

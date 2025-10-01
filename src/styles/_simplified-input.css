@@ -67,6 +67,20 @@
 }
 
 
+/* Disabled */
+.simplified-input__widget:read-only,
+.simplified-input__widget:read-only:hover {
+    border-color: transparent;
+    background-color: #EBF1F3;
+    color: #024593;
+    cursor: default;
+}
+
+.simplified-input__widget:read-only::placeholder {
+    color: #024593;
+}
+
+
 /* Error */
 .input--error {
 
