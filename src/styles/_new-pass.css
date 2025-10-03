@@ -1,4 +1,5 @@
 .new-pass {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -52,6 +53,12 @@
     .new-pass__footer {
         display: flex;
         justify-content: space-between;
+    }
+
+    .new-pass__completed {
+        position: absolute;
+        inset: 0;
+        display: none;
     }
 
 
