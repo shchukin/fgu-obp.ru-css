@@ -13,9 +13,9 @@
 @import url("_label.css");
 @import url("_helper.css");
 
-/*@import url("_mfp.css");*/
-/*@import url("_window.css");*/
-/*@import url("_login.css");*/
+@import url("_mfp.css");
+@import url("_window.css");
+@import url("_auth.css");
 
 
 /* overrides */

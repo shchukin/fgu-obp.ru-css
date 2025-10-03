@@ -159,3 +159,13 @@ select.simplified-input__widget:disabled {
             color: #000000; /* Browsers on Windows inherit grey color from <select> to <option>`s. Reset it. */
         }
 
+
+
+.simplified-input--larger {
+
+}
+    .simplified-input--larger .simplified-input__widget {
+        height: 60px;
+        padding-top: 20px;
+        padding-bottom: 19px;
+    }

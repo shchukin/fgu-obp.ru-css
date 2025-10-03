@@ -17,11 +17,14 @@
     --disabled-background: #F6F6F6;
     --disabled-color: #999999;
     --error: #E63946;
+    --modal-window: 552px;
+    --radius: 16px
 }
 
 @media (width < 768px) {
     :root {
         --container-padding: 16px;
+        --radius: 12px;
     }
 }
 
