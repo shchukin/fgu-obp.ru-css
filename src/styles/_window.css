@@ -45,6 +45,39 @@
 
 
 
+@media (width < 768px) {
+
+    .window {
+
+    }
+        .window__close {
+            right: 0 !important;
+            top: 0 !important;
+            width: 54px;
+            height: 54px;
+        }
+            .window__close::before {
+                width: 24px;
+                height: 24px;
+            }
+
+            .window__close:hover::before {
+
+            }
+
+            .window__cross {
+                width: 16px;
+                height: 16px;
+            }
+}
+
+
+
+
+
+
+
+
 .window--auth {
     width: var(--modal-window);
 }
@@ -62,6 +95,9 @@
 .window--feedback {
     width: 879px;
 }
+    .window--feedback .window__close {
+        top: 34px !important;
+    }
 
 @media (width < 768px) {
 
@@ -69,4 +105,7 @@
         width: 100%;
         max-width: 358px;
     }
+        .window--feedback .window__close {
+            top: 20px !important;
+        }
 }

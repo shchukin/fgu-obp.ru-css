@@ -34,14 +34,20 @@
 }
 
 
+
 @media (width < 768px) {
 
     .feedback {
-        padding: 32px 16px;
+        padding: 24px 16px;
     }
         .feedback__heading {
 
         }
+            .feedback__heading.title,
+            .feedback__heading .title {
+                font-size: 24px;
+                line-height: 29px;
+            }
 
         .feedback__form {
 
@@ -54,6 +60,6 @@
 
             }
                 .feedback__submit .button {
-                    /*width: 100%;*/
+
                 }
 }
