@@ -75,24 +75,25 @@
     });
 
 
-    $('.simplified-datepicker__handler').on('click', function () {
-        if( ! $(this).parents('.simplified-datepicker').hasClass('simplified-datepicker--readonly') ) {
-            $(this).closest('.simplified-datepicker').toggleClass('simplified-datepicker--expanded');
+    $('.picker__handler').on('click', function () {
+        if( ! $(this).parents('.picker').hasClass('picker--readonly') ) {
+            $(this).closest('.picker').toggleClass('picker--expanded');
         }
     });
 
-    $('.simplified-datepicker__suggest').on('click', function (){
+    $('.picker__suggest').on('click', function (){
         const value = $(this).html();
-        $(this).closest('.simplified-datepicker').find('.simplified-datepicker__value').html(value);
-        $(this).closest('.simplified-datepicker').removeClass('simplified-datepicker--expanded');
+        $(this).closest('.picker').find('.picker__value').html(value);
+        $(this).closest('.picker').removeClass('picker--placeholder-is-chosen');
+        $(this).closest('.picker').removeClass('picker--expanded');
     });
 
 
     /* hide popup by overlay click ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.simplified-datepicker').length) {
-            $('.simplified-datepicker').removeClass('simplified-datepicker--expanded');
+        if (!$(event.target).closest('.picker').length) {
+            $('.picker').removeClass('picker--expanded');
         }
     });
 
@@ -101,7 +102,7 @@
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $('.simplified-datepicker').removeClass('simplified-datepicker--expanded');
+            $('.picker').removeClass('picker--expanded');
         }
     });
 
