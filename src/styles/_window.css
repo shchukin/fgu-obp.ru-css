@@ -56,3 +56,17 @@
         max-width: 358px;
     }
 }
+
+
+
+.window--feedback {
+    width: 879px;
+}
+
+@media (width < 768px) {
+
+    .window--feedback {
+        width: 100%;
+        max-width: 358px;
+    }
+}
