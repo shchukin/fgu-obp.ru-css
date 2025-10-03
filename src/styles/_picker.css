@@ -1,12 +1,12 @@
-.simplified-datepicker {
+.picker {
 
 }
-    .simplified-datepicker__handler {
+    .picker__handler {
         position: relative;
         vertical-align: top;
         width: 100%;
         height: 52px;
-        padding: 16px 55px 15px;
+        padding: 16px 55px 15px 23px;
         background-color: transparent;
         border: 1px solid var(--input-border);
         border-radius: 8px;
@@ -20,10 +20,14 @@
         cursor: pointer;
     }
 
-    .simplified-datepicker__handler:hover {
+    .picker__handler:hover {
         background-color: #F6F6F6;
     }
-        .simplified-datepicker__icon {
+
+    .picker__handler:has(.picker__icon) {
+        padding-left: 55px;
+    }
+        .picker__icon {
             position: absolute;
             left: 22px;
             top: -2px;
@@ -33,11 +37,11 @@
             fill: #90A2AB;
         }
 
-        .simplified-datepicker__value {
+        .picker__value {
 
         }
 
-        .simplified-datepicker__chevron {
+        .picker__chevron {
             position: absolute;
             right: 23px;
             top: 0;
@@ -48,7 +52,7 @@
         }
 
 
-    .simplified-datepicker__dropdown {
+    .picker__dropdown {
         max-height: 340px;
         margin-top: -1px;
         overflow-y: auto; /* По-мимо скроллбала ещё обрезаем скруглённые уголки */
@@ -57,7 +61,7 @@
         border-bottom-right-radius: 8px;
         display: none;
     }
-        .simplified-datepicker__suggest {
+        .picker__suggest {
             width: 100%;
             background-color: transparent;
             border: none;
@@ -69,59 +73,59 @@
             cursor: pointer;
         }
 
-        .simplified-datepicker__suggest:first-child {
+        .picker__suggest:first-child {
             border-top: none;
         }
 
-        .simplified-datepicker__suggest:hover {
+        .picker__suggest:hover {
             background-color: #F6F6F6;
         }
 
-        .simplified-datepicker__suggest:last-child {
+        .picker__suggest:last-child {
 
         }
 
 
 
-.simplified-datepicker--expanded {
+.picker--expanded {
 
 }
-    .simplified-datepicker--expanded .simplified-datepicker__handler {
+    .picker--expanded .picker__handler {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         color: #0D49B4;
     }
-        .simplified-datepicker--expanded .simplified-datepicker__icon {
+        .picker--expanded .picker__icon {
             fill: #0D49B4;
         }
 
-        .simplified-datepicker--expanded .simplified-datepicker__chevron {
+        .picker--expanded .picker__chevron {
             transform: scaleY(-1);
         }
 
-        .simplified-datepicker--expanded .simplified-datepicker__dropdown {
+        .picker--expanded .picker__dropdown {
             display: block;
         }
 
-            .simplified-datepicker--expanded .simplified-datepicker__value .day__number,
-            .simplified-datepicker--expanded .simplified-datepicker__value .day__note {
+            .picker--expanded .picker__value .day__number,
+            .picker--expanded .picker__value .day__note {
                 color: #0D49B4;
             }
 
 
-.simplified-datepicker--readonly {
+.picker--readonly {
 
 }
-    .simplified-datepicker--readonly .simplified-datepicker__handler {
+    .picker--readonly .picker__handler {
         border-color: transparent;
         background-color: #EBF1F3;
         color: #024593;
         cursor: default;
     }
-        .simplified-datepicker--readonly .simplified-datepicker__icon {
+        .picker--readonly .picker__icon {
             fill: #0D49B4;
         }
-        .simplified-datepicker--readonly .simplified-datepicker__chevron {
+        .picker--readonly .picker__chevron {
             display: none;
         }
 
@@ -130,10 +134,10 @@
 
 @media (width < 768px) {
 
-    .simplified-datepicker {
+    .picker {
 
     }
-        .simplified-datepicker__handler {
+        .picker__handler {
             /*position: relative;*/
             /*vertical-align: top;*/
             /*width: 100%;*/
@@ -154,10 +158,10 @@
             /*cursor: pointer;*/
         }
 
-        .simplified-datepicker__handler:hover {
+        .picker__handler:hover {
             /*background-color: #F6F6F6;*/
         }
-            .simplified-datepicker__icon {
+            .picker__icon {
                 /*position: absolute;*/
                 left: 14px;
                 /*top: -2px;*/
@@ -167,11 +171,11 @@
                 /*fill: #90A2AB;*/
             }
 
-            .simplified-datepicker__value {
+            .picker__value {
 
             }
 
-            .simplified-datepicker__chevron {
+            .picker__chevron {
                 /*position: absolute;*/
                 right: 14px;
                 /*top: 0;*/
@@ -182,7 +186,7 @@
             }
 
 
-        .simplified-datepicker__dropdown {
+        .picker__dropdown {
             /*max-height: 340px;*/
             /*margin-top: -1px;*/
             /*overflow-y: auto; !* По-мимо скроллбала ещё обрезаем скруглённые уголки *!*/
@@ -191,7 +195,7 @@
             /*border-bottom-right-radius: 8px;*/
             /*display: none;*/
         }
-            .simplified-datepicker__suggest {
+            .picker__suggest {
                 /*width: 100%;*/
                 /*background-color: transparent;*/
                 /*border: none;*/
@@ -203,59 +207,59 @@
                 /*cursor: pointer;*/
             }
 
-            .simplified-datepicker__suggest:first-child {
+            .picker__suggest:first-child {
                 /*border-top: none;*/
             }
 
-            .simplified-datepicker__suggest:hover {
+            .picker__suggest:hover {
                 /*background-color: #F6F6F6;*/
             }
 
-            .simplified-datepicker__suggest:last-child {
+            .picker__suggest:last-child {
 
             }
 
 
 
-    .simplified-datepicker--expanded {
+    .picker--expanded {
 
     }
-        .simplified-datepicker--expanded .simplified-datepicker__handler {
+        .picker--expanded .picker__handler {
             /*border-bottom-left-radius: 0;*/
             /*border-bottom-right-radius: 0;*/
             /*color: #0D49B4;*/
         }
-            .simplified-datepicker--expanded .simplified-datepicker__icon {
+            .picker--expanded .picker__icon {
                 /*fill: #0D49B4;*/
             }
 
-            .simplified-datepicker--expanded .simplified-datepicker__chevron {
+            .picker--expanded .picker__chevron {
                 /*transform: scaleY(-1);*/
             }
 
-            .simplified-datepicker--expanded .simplified-datepicker__dropdown {
+            .picker--expanded .picker__dropdown {
                 /*display: block;*/
             }
 
-                .simplified-datepicker--expanded .simplified-datepicker__value .day__number,
-                .simplified-datepicker--expanded .simplified-datepicker__value .day__note {
+                .picker--expanded .picker__value .day__number,
+                .picker--expanded .picker__value .day__note {
                     /*color: #0D49B4;*/
                 }
 
 
-    .simplified-datepicker--readonly {
+    .picker--readonly {
 
     }
-        .simplified-datepicker--readonly .simplified-datepicker__handler {
+        .picker--readonly .picker__handler {
             /*border-color: transparent;*/
             /*background-color: #EBF1F3;*/
             /*color: #024593;*/
             /*cursor: default;*/
         }
-            .simplified-datepicker--readonly .simplified-datepicker__icon {
+            .picker--readonly .picker__icon {
                 /*fill: #0D49B4;*/
             }
-            .simplified-datepicker--readonly .simplified-datepicker__chevron {
+            .picker--readonly .picker__chevron {
                 /*display: none;*/
             }
 }
