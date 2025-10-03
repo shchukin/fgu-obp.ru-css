@@ -84,6 +84,7 @@
     $('.picker__suggest').on('click', function (){
         const value = $(this).html();
         $(this).closest('.picker').find('.picker__value').html(value);
+        $(this).closest('.picker').removeClass('picker--placeholder-is-chosen');
         $(this).closest('.picker').removeClass('picker--expanded');
     });
 

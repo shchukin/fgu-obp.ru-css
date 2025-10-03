@@ -13,7 +13,7 @@
         font-family: inherit;
         font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
         line-height: 19px;
-        color: #90A2AB;
+        color: #000000;
         text-align: left;
         opacity: 1; /* reset select:disabled default fade on iOS */
         -webkit-tap-highlight-color: transparent;
@@ -85,6 +85,13 @@
 
         }
 
+
+.picker--placeholder-is-chosen {
+
+}
+    .picker--placeholder-is-chosen .picker__handler {
+        color: #90A2AB;
+    }
 
 
 .picker--expanded {

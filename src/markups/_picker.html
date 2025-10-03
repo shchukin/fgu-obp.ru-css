@@ -14,7 +14,7 @@
             <br>
             <h1>.picker</h1>
 
-            <div class="picker">
+            <div class="picker picker--placeholder-is-chosen">
                 <button class="picker__handler" type="button">
                     <span class="picker__value">
                         Выберите из списка
@@ -45,6 +45,9 @@
                 </div>
             </div>
 
+            <p>
+                Класс <b><i>.picker--placeholder-is-chosen</i></b> -- аналог класса <a href="_input.html">input--placeholder-is-chosen</a>. Проставляется по-умолчанию, когда ещё не выбрано никакое значение, и делает текст серым.
+            </p>
 
             <br>
             <br>
@@ -52,7 +55,7 @@
             <h2>С иконкой</h2>
             <p>Просто добавляем иконку в код:</p>
 
-            <div class="picker">
+            <div class="picker picker--placeholder-is-chosen">
                 <button class="picker__handler" type="button">
                     <svg class="picker__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                         <path d="M15.222 1.89h-.889V.11h-1.777V1.89H5.444V.111H3.667V1.89h-.89c-.986 0-1.768.8-1.768 1.778L1 16.11c0 .978.791 1.778 1.778 1.778h12.444c.978 0 1.778-.8 1.778-1.778V3.667c0-.978-.8-1.778-1.778-1.778Zm0 14.221H2.778V7.222h12.444v8.89Zm-8.889-5.333H4.556V9h1.777v1.778Zm3.556 0H8.11V9H9.89v1.778Zm3.555 0h-1.777V9h1.777v1.778Zm-7.11 3.556H4.555v-1.778h1.777v1.778Zm3.555 0H8.11v-1.778H9.89v1.778Zm3.555 0h-1.777v-1.778h1.777v1.778Z"/>
@@ -97,7 +100,7 @@
                 Всё сожержимое <b><i>picker__suggest</i></b> копируется внутрь <b><i>.picker__value</i></b>:
             </p>
 
-            <div class="picker">
+            <div class="picker picker--placeholder-is-chosen">
                 <button class="picker__handler" type="button">
                     <svg class="picker__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                         <path d="M15.222 1.89h-.889V.11h-1.777V1.89H5.444V.111H3.667V1.89h-.89c-.986 0-1.768.8-1.768 1.778L1 16.11c0 .978.791 1.778 1.778 1.778h12.444c.978 0 1.778-.8 1.778-1.778V3.667c0-.978-.8-1.778-1.778-1.778Zm0 14.221H2.778V7.222h12.444v8.89Zm-8.889-5.333H4.556V9h1.777v1.778Zm3.556 0H8.11V9H9.89v1.778Zm3.555 0h-1.777V9h1.777v1.778Zm-7.11 3.556H4.555v-1.778h1.777v1.778Zm3.555 0H8.11v-1.778H9.89v1.778Zm3.555 0h-1.777v-1.778h1.777v1.778Z"/>
@@ -160,7 +163,7 @@
             </p>
 
 
-            <div class="picker picker--readonly">
+            <div class="picker picker--placeholder-is-chosen picker--readonly">
                 <button class="picker__handler" type="button">
                     <svg class="picker__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                         <path d="M15.222 1.89h-.889V.11h-1.777V1.89H5.444V.111H3.667V1.89h-.89c-.986 0-1.768.8-1.768 1.778L1 16.11c0 .978.791 1.778 1.778 1.778h12.444c.978 0 1.778-.8 1.778-1.778V3.667c0-.978-.8-1.778-1.778-1.778Zm0 14.221H2.778V7.222h12.444v8.89Zm-8.889-5.333H4.556V9h1.777v1.778Zm3.556 0H8.11V9H9.89v1.778Zm3.555 0h-1.777V9h1.777v1.778Zm-7.11 3.556H4.555v-1.778h1.777v1.778Zm3.555 0H8.11v-1.778H9.89v1.778Zm3.555 0h-1.777v-1.778h1.777v1.778Z"/>
