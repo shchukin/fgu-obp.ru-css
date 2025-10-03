@@ -1,0 +1,38 @@
+.event {
+    padding: 40px 24px 32px;
+    font-size: 16px;
+    line-height: 19px;
+}
+    .event__field {
+        margin-top: 16px;
+        line-height: 19px;
+    }
+
+    .event__field:first-child {
+        margin-top: 0;
+    }
+
+    .event__back {
+        margin-top: 12px;
+    }
+
+
+
+@media (width < 768px) {
+
+    .event {
+        padding: 24px 16px 12px;
+    }
+        .event__field {
+            margin-top: 22px;
+            /*line-height: 19px;*/
+        }
+
+        .event__field:first-child {
+            /*margin-top: 0;*/
+        }
+
+        .event__back {
+            /*margin-top: 12px;*/
+        }
+}

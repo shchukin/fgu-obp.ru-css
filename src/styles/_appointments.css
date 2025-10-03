@@ -10,7 +10,12 @@
             padding-bottom: 16px;
             display: grid;
             grid-template-columns: 180px 160px 200px 216px;
+            align-items: center;
             gap: 24px;
+        }
+
+        .appointments__item:first-child {
+            border-top: none;
         }
             .appointments__summary {
 
@@ -25,13 +30,81 @@
                 }
 
             .appointments__doctor {
-
+                font-size: 16px;
+                line-height: 19px;
             }
 
             .appointments__details {
 
             }
+                .appointments__branch {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                .appointments__room {
+                    margin-top: 8px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #90A2AB;
+                }
 
             .appointments__operations {
 
             }
+
+
+
+@media (width < 768px) {
+
+    .appointments {
+        padding: 24px 16px;
+    }
+        .appointments__list {
+
+        }
+            .appointments__item {
+                position: relative;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                display: block;
+            }
+
+            .appointments__item:first-child {
+
+            }
+                .appointments__summary {
+
+                }
+                    .appointments__date {
+                        position: absolute;
+                        right: 0;
+                        top: 12px;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+
+                    .appointments__status {
+                        margin-top: 0;
+                    }
+
+                .appointments__doctor {
+                    margin-top: 16px;
+                }
+
+                .appointments__details {
+                    margin-top: 10px;
+                }
+                    .appointments__branch {
+
+                    }
+
+                    .appointments__room {
+
+                    }
+
+                .appointments__operations {
+                    margin-top: 24px;
+                }
+}
+

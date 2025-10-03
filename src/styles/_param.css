@@ -1,0 +1,33 @@
+.param {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    background-color: #EBF1F3;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #024593;
+}
+    .param__icon {
+        vertical-align: top;
+        fill: currentColor;
+    }
+
+
+
+@media (width < 768px) {
+
+    .param {
+        /*display: flex;*/
+        gap: 12px;
+        padding: 18px 16px;
+        /*background-color: #EBF1F3;*/
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        /*color: #024593;*/
+    }
+        .param__icon {
+            margin-top: -1px;
+        }
+}

@@ -1,5 +1,6 @@
 .badge {
     min-width: 123px;
+    display: block;
     width: fit-content;
     padding: 6px 16px;
     border-radius: 15px;
@@ -28,12 +29,17 @@
 
     .badge {
         min-width: 0;
-        /*width: fit-content;*/
         padding: 4px 12px;
-        /*border-radius: 15px;*/
         font-size: 12px;
         line-height: 14px;
-        /*text-align: center;*/
     }
 }
 
+
+
+.badge--smaller {
+    min-width: 0;
+    padding: 4px 12px;
+    font-size: 12px;
+    line-height: 14px;
+}
