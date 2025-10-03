@@ -24,7 +24,7 @@
             }
 
 
-.auth__completed {
+.auth__alert {
     position: absolute;
     inset: 0;
     background-color: #FFFFFF;

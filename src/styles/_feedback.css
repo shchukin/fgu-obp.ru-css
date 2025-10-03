@@ -25,7 +25,7 @@
             }
 
 
-.feedback__completed {
+.feedback__alert {
     position: absolute;
     inset: 0;
     background-color: #FFFFFF;

@@ -55,7 +55,7 @@
         justify-content: space-between;
     }
 
-    .new-pass__completed {
+    .new-pass__alert {
         position: absolute;
         inset: 0;
         display: none;
