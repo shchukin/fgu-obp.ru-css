@@ -1,0 +1,37 @@
+.appointments {
+    padding: 40px 24px;
+}
+    .appointments__list {
+
+    }
+        .appointments__item {
+            border-top: 1px solid #D8DEE7;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: grid;
+            grid-template-columns: 180px 160px 200px 216px;
+            gap: 24px;
+        }
+            .appointments__summary {
+
+            }
+                .appointments__date {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                .appointments__status {
+                    margin-top: 8px;
+                }
+
+            .appointments__doctor {
+
+            }
+
+            .appointments__details {
+
+            }
+
+            .appointments__operations {
+
+            }

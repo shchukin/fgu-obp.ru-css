@@ -18,6 +18,10 @@
     color: #F55453;
 }
 
+.badge--success {
+    background-color: #E9F7E6;
+    color: #3ABB60;
+}
 
 
 @media (width < 768px) {
