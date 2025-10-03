@@ -42,3 +42,47 @@
         gap: 6px;
     }
 }
+
+
+
+
+
+
+@keyframes button-loading-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.button--loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+}
+
+.button--loading:disabled {
+    color: transparent !important;
+}
+    .button--loading::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+        margin-left: -12px;
+        background-image: url("../vectors/button-loading.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: button-loading-spin 1s steps(12) infinite;
+    }
+
+    @media (1850px <= width) {
+        .button--loading::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
