@@ -1,5 +1,6 @@
 .doctor-card {
     display: grid;
+    align-items: flex-start;
     grid-template-columns: 80px 265px 374px;
     gap: 24px;
     padding: 16px 24px;
@@ -7,10 +8,27 @@
     border-radius: 12px;
 }
     .doctor-card__preview {
-
+        position: relative;
     }
         .doctor-card__image {
+            vertical-align: top;
             border-radius: 12px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+
+        .doctor-card__preview::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border: 1px solid #EBEFF3;
+            border-radius: 12px;
+        }
+
+        .doctor-card--selected .doctor-card__preview::after {
+            display: none;
         }
 
     .doctor-card__body {
@@ -84,6 +102,10 @@
             .doctor-card__image {
                 width: 95px;
                 height: 95px;
+                border-radius: 8px;
+            }
+
+            .doctor-card__preview::after {
                 border-radius: 8px;
             }
 
