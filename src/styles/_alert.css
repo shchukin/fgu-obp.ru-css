@@ -38,6 +38,13 @@
         justify-content: center;
     }
 
+    .alert__additional-action {
+        width: fit-content;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 @media (width < 768px) {
 
@@ -62,5 +69,12 @@
 
         .alert__actions {
             margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .alert__additional-action {
+
         }
 }

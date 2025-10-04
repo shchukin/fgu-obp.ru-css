@@ -15,10 +15,16 @@
     .icon-action__icon {
         margin-top: -2px;
         vertical-align: top;
-        stroke: currentColor;
+        fill: currentColor;
     }
 
 
 .icon-action:hover {
     color: #3575e7;
+}
+
+
+
+.icon-action--grayed-out {
+    color: #90A2AB;
 }
