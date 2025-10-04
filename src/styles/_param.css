@@ -2,11 +2,12 @@
     display: flex;
     gap: 16px;
     padding: 24px;
-    background-color: #EBF1F3;
+    box-shadow: inset 0 0 0 1px #D8DEE7;
+    background-color: transparent;
+    color: #000000;
     border-radius: 12px;
     font-size: 18px;
     line-height: 22px;
-    color: #024593;
 }
     .param__icon {
         vertical-align: top;
@@ -31,8 +32,8 @@
 
 
 
-.param--placeholder {
-    box-shadow: inset 0 0 0 1px #D8DEE7;
-    background-color: #FFFFFF;
-    color: #000000;
+.param--selected {
+    background-color: #EBF1F3;
+    box-shadow: none;
+    color: #024593;
 }
