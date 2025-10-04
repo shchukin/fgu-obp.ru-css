@@ -28,3 +28,31 @@
     .info__action {
         margin-top: auto;
     }
+
+
+
+@media (width < 768px) {
+
+    .info {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*height: 376px;*/
+        padding: 24px;
+        /*background-image: url("../images/info/info@1x.jpg");*/
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+        border-radius: 12px;
+        /*text-decoration: none;*/
+        /*color: #000000;*/
+    }
+        .info__heading {
+            /*font-family: var(--font-heading);*/
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .info__action {
+            /*margin-top: auto;*/
+        }
+}
