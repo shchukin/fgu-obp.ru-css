@@ -1,0 +1,121 @@
+.carousel {
+
+}
+
+
+.carousel--css-skin-date {
+    position: relative;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+    .carousel--css-skin-date .carousel__widget {
+
+    }
+        .carousel--css-skin-date .swiper {
+
+        }
+            .carousel--css-skin-date .swiper-wrapper {
+
+            }
+                .carousel--css-skin-date .swiper-slide {
+                    width: auto;
+                    padding-top: 4px;
+                }
+
+    .carousel--css-skin-date .carousel__controls {
+
+    }
+        .carousel--css-skin-date .carousel__button {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 37px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .carousel__button--prev {
+            left: 0;
+            justify-content: flex-start;
+        }
+
+        .carousel__button--next {
+            right: 0;
+            justify-content: flex-end;
+        }
+
+        .carousel__button--disabled {
+            cursor: default;
+        }
+            .carousel__chevron {
+                fill: #0D49B4;
+            }
+            
+            .carousel__button--disabled .carousel__chevron {
+                fill: #90A2AB;
+            }
+
+
+
+@media (width < 768px) {
+
+    .carousel--css-skin-date {
+        /*position: relative;*/
+        padding-left: 0;
+        padding-right: 0;
+    }
+        .carousel--css-skin-date .carousel__widget {
+
+        }
+            .carousel--css-skin-date .swiper {
+                overflow: visible; /* Обрежется на уровне doctor-card */
+            }
+                .carousel--css-skin-date .swiper-wrapper {
+
+                }
+                    .carousel--css-skin-date .swiper-slide {
+                        /*width: auto;*/
+                        /*padding-top: 4px;*/
+                    }
+
+        .carousel--css-skin-date .carousel__controls {
+            display: none;
+        }
+            .carousel--css-skin-date .carousel__button {
+                /*position: absolute;*/
+                /*top: 0;*/
+                /*bottom: 0;*/
+                /*width: 37px;*/
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*background-color: transparent;*/
+                /*border: none;*/
+                /*padding: 0;*/
+                /*cursor: pointer;*/
+            }
+
+            .carousel__button--prev {
+                /*left: 0;*/
+                /*justify-content: flex-start;*/
+            }
+
+            .carousel__button--next {
+                /*right: 0;*/
+                /*justify-content: flex-end;*/
+            }
+
+            .carousel__button--disabled {
+                /*cursor: default;*/
+            }
+                .carousel__chevron {
+                    /*fill: #0D49B4;*/
+                }
+
+                .carousel__button--disabled .carousel__chevron {
+                    /*fill: #90A2AB;*/
+                }
+}

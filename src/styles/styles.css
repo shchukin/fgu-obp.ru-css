@@ -1,7 +1,8 @@
 @import url("../vendors/normalize/normalize.css");
 @import url("../vendors/magnific-popup/magnific-popup.css");
-/*@import url("_box-sizing.css");*/
-/*@import url("_visuallyhidden.css");*/
+@import url("../vendors/swiper/swiper-bundle.min.css");
+@import url("_box-sizing.css");
+@import url("_visuallyhidden.css");
 @import url("_root.css");
 /*@import url("_html.css");*/
 
@@ -47,4 +48,5 @@
 @import url("_new-appointment.css");
 @import url("_departments.css");
 @import url("_bar.css");
+@import url("_carousel.css");
 

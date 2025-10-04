@@ -1,7 +1,8 @@
 .bar {
+    position: relative;
     display: block;
-    width: fit-content;
-    padding: 8px;
+    width: 49px;
+    padding: 8px 0;
     background-color: transparent;
     box-shadow: inset 0 0 0 1px currentColor;
     border: none;
@@ -10,15 +11,14 @@
     font-size: 13px;
     line-height: 13px;
     color: #0D49B4;
+    text-align: center;
     cursor: pointer;
+    user-select: none;
 }
-
 
 .bar:hover {
     color: #3575e7;
 }
-
-
 
 .bar--selected,
 .bar--selected:hover {
@@ -27,3 +27,38 @@
     color: #FFFFFF;
     cursor: default;
 }
+
+
+
+.bar--date {
+    width: 52px;
+    padding-left: 6px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    text-align: left;
+}
+    .bar__note {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .bar__mark {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: -4px;
+        display: block;
+        width: fit-content;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: #F3F6FB;
+        border-radius: 4px;
+        font-size: 8px;
+        line-height: 8px;
+        color: #0D49B4;
+        text-transform: lowercase;
+    }
