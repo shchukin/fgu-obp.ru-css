@@ -6,24 +6,31 @@
 
     }
 
-    .new-appointment__choice {
-        margin-top: 24px;
-    }
-
     .new-appointment__body {
-        margin-top: 24px;
+        margin-top: 40px;
     }
-        .new-appointment__doc {
-            margin-top: 16px;
+        .new-appointment__choice {
+            margin-top: 24px;
         }
 
-        .new-appointment__doc:first-child {
+        .new-appointment__choice:first-child {
             margin-top: 0;
         }
 
-    .new-appointment__back {
+        .new-appointment__list {
+            margin-top: 24px;
+        }
+            .new-appointment__doc {
+                margin-top: 16px;
+            }
 
-    }
+            .new-appointment__doc:first-child {
+                margin-top: 0;
+            }
+
+        .new-appointment__back {
+
+        }
 
 
 
