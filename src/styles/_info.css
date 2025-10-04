@@ -1,0 +1,30 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 376px;
+    padding: 40px 24px 24px;
+    background-image: url("../images/info/info@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (min-resolution: 1.5dppx) {
+
+    .info {
+        background-image: url("../images/info/info@2x.jpg");
+    }
+}
+
+    .info__heading {
+        font-family: var(--font-heading);
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .info__action {
+        margin-top: auto;
+    }

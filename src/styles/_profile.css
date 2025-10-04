@@ -6,8 +6,13 @@
     gap: 24px;
 }
     .profile__sidebar {
-
+        padding-top: 40px;
     }
+
+    .profile__sidebar:has(.profile__back) {
+        padding-top: 0;
+    }
+
         .profile__back {
 
         }
@@ -140,7 +145,7 @@
         display: block;
     }
         .profile__sidebar {
-
+            padding-top: 0;
         }
             .profile__back {
                 display: none;
