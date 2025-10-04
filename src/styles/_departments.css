@@ -1,0 +1,72 @@
+.departments {
+    border: 1px solid #D8DEE7;
+    border-radius: 16px;
+}
+    .departments__item {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding: 20px 64px;
+        border: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        cursor: pointer;
+    }
+        .departments__icon {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            stroke: #0D49B4;
+        }
+
+        .departments__item::before {
+            content: "";
+            position: absolute;
+            left: 64px;
+            right: 24px;
+            bottom: 0;
+            height: 1px;
+            background-color: #B5B5B5;
+        }
+
+        .departments__item:last-child::before {
+            display: none;
+        }
+
+        .departments__item::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            top: 0;
+            bottom: 0;
+            width: 28px;
+            height: 28px;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-image: url("../vectors/departments-item.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+.departments__item:hover {
+
+}
+    .departments__item:hover {
+        color: #3575e7;
+    }
+
+    .departments__item:hover .departments__icon {
+        stroke: #3575e7;
+    }
+
+    .departments__item:hover::after {
+        background-image: url("../vectors/departments-item-hover.svg");
+    }
