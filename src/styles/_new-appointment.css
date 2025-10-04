@@ -1,0 +1,35 @@
+.new-appointment {
+    position: relative;
+    padding: 40px 24px;
+}
+    .new-appointment__progress {
+
+    }
+
+    .new-appointment__choice {
+        margin-top: 24px;
+    }
+
+    .new-appointment__body {
+        margin-top: 24px;
+    }
+        .new-appointment__doc {
+            margin-top: 16px;
+        }
+
+        .new-appointment__doc:first-child {
+            margin-top: 0;
+        }
+
+    .new-appointment__back {
+
+    }
+
+
+
+@media (width < 768px) {
+
+    .new-appointment {
+        padding: 40px 16px 24px;
+    }
+}

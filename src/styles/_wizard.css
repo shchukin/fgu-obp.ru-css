@@ -85,6 +85,14 @@
 
 
 
+.wizard:has(.wizard__step:nth-child(7)) {
+    gap: 2.5%;
+}
+    .wizard:has(.wizard__step:nth-child(7)) .wizard__arrow {
+        min-width: 30px;
+    }
+
+
 @media (width < 768px) {
 
     .wizard {
