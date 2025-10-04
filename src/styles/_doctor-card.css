@@ -41,6 +41,19 @@
             line-height: 19px;
         }
 
+    .doctor-card__appointment {
+
+    }
+        .doctor-card__day {
+
+        }
+
+        .doctor-card__time {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
 .doctor-card--selected {
     background-color: #EBF1F3;
