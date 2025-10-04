@@ -68,12 +68,7 @@
 
 
 
-    /* Init inputmask */
-
-    $('[type="tel"]').inputmask({
-        alias: 'phoneru',
-    });
-
+    /* Picker */
 
     $('.picker__handler').on('click', function () {
         if( ! $(this).parents('.picker').hasClass('picker--readonly') ) {
@@ -104,6 +99,35 @@
         if (event.keyCode === 27) {
             $('.picker').removeClass('picker--expanded');
         }
+    });
+
+
+    /* Все слайдеры в одной функции, чтобы их можно было переинициализировать при ресайзе */
+    function initCarousels() {
+
+        /* Swiper для Intro */
+
+        document.querySelectorAll('.carousel--js-init-date').forEach(($carousel) => {
+
+            new Swiper($carousel.querySelector('.swiper'), {
+                slidesPerView: 'auto',
+                slidesPerGroup: 3,
+                spaceBetween: 10,
+                navigation: {
+                    prevEl: $carousel.querySelector('.carousel__button--prev'),
+                    nextEl: $carousel.querySelector('.carousel__button--next'),
+                    disabledClass: 'carousel__button--disabled'
+                }
+            });
+        });
+    }
+
+
+
+    $(document).ready(initCarousels);
+
+    $(window).on('resize', function () {
+        setTimeout(initCarousels, 1000)
     });
 
 
