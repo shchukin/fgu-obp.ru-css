@@ -228,21 +228,7 @@
                 top: 38px;
                 padding: 0;
             }
-                .entries__more .icon-action {
-                    text-indent: 200%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 32px;
-                    height: 32px;
-                    padding: 0;
-                    background-color: #ECEFF3;
-                    border-radius: 50%;
-                }
-                    .entries__more .icon-action__icon {
-                        position: absolute;
-                        inset: 0;
-                        margin: auto;
-                    }
+
 
 
             .entries__pass-row {

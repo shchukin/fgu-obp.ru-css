@@ -33,3 +33,31 @@
 .icon-action--blackened {
     color: #000000;
 }
+
+
+
+.icon-action--chevron-on-smartphone {
+
+}
+
+
+@media (width < 769px) {
+
+    .icon-action--chevron-on-smartphone {
+        position: relative;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        background-color: #ECEFF3;
+        border-radius: 50%;
+    }
+        .icon-action--chevron-on-smartphone .icon-action__icon {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            fill: #3C3C3C;
+        }
+}
