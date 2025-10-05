@@ -1,0 +1,104 @@
+.header {
+    background-color: #FFFFFF;
+    box-shadow: 0 15px 24px rgb(196 206 211 / 30%);
+}
+    .header__top {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+        .header__top-wrap {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+            .header__logo {
+                width: 467px;
+                height: 48px;
+                margin-right: auto;
+                background-image: url("../images/logo/logo-desktop.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .header__channel {
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+                .header__channel-heading {
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                }
+
+                .header__channel-value {
+                    margin-top: 4px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+
+            .header__accessibility {
+                position: relative;
+                display: block;
+                width: fit-content;
+                padding-left: 34px;
+                font-size: 14px;
+                line-height: 17px;
+                color: #8C9EA3;
+                text-decoration: none;
+            }
+                .header__eye {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    fill: currentColor;
+                }
+
+    .header__bottom {
+        border-top: 1px solid #EBEFF3;
+    }
+        .header__bottom-wrap {
+            display: flex;
+            align-items: flex-start;
+        }
+            .header__nav {
+                display: flex;
+                align-items: flex-start;
+                margin-left: -12px;
+                margin-right: -12px;
+            }
+                .header__link {
+                    padding: 14px 12px;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #000000;
+                    text-decoration: none;
+                }
+
+                .header__link:hover {
+                    color: #3575e7;
+                }
+
+            .header__user {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: auto;
+                padding: 12px 0 9px;
+                border-bottom: 2px solid currentColor;
+                color: #0D49B4;
+                text-decoration: none;
+            }
+
+            .header__user:hover {
+                color: #3575e7;
+            }
+                .header__profile {
+                    flex-shrink: 0;
+                    stroke: currentColor;
+                }
