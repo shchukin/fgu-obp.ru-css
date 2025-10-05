@@ -47,6 +47,13 @@
             line-height: 17px;
         }
 
+        .actions-panel__action:only-child {
+            flex-grow: 0;
+            flex-basis: 151px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .actions-panel__action:hover {
 
         }
