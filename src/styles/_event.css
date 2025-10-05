@@ -39,14 +39,13 @@
     }
         .event__field {
             margin-top: 22px;
-            /*line-height: 19px;*/
         }
 
         .event__field:first-child {
-            /*margin-top: 0;*/
+
         }
 
         .event__back {
-            /*margin-top: 12px;*/
+
         }
 }
