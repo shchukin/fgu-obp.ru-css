@@ -102,3 +102,71 @@
                     flex-shrink: 0;
                     stroke: currentColor;
                 }
+
+
+
+@media (width < 768px) {
+
+    .header {
+
+    }
+        .header__top {
+
+        }
+            .header__top-wrap {
+
+            }
+                .header__logo {
+                    background-image: url("../images/logo/logo-smartphone.svg");
+                    width: 190px;
+                    height: 58px;
+                }
+
+                .header__channel {
+                    display: none;
+                }
+                    .header__channel-heading {
+
+                    }
+
+                    .header__channel-value {
+
+                    }
+
+
+                .header__accessibility {
+                    display: none;
+
+                }
+                    .header__eye {
+
+                    }
+
+        .header__bottom {
+            display: none;
+        }
+            .header__bottom-wrap {
+
+            }
+                .header__nav {
+
+                }
+                    .header__link {
+
+                    }
+
+                    .header__link:hover {
+
+                    }
+
+                .header__user {
+
+                }
+
+                .header__user:hover {
+
+                }
+                    .header__profile {
+
+                    }
+}
