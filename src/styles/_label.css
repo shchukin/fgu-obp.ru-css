@@ -8,7 +8,7 @@
     color: #90A2AB;
 }
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .label {
         padding-bottom: 8px;

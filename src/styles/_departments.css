@@ -74,7 +74,7 @@
 
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .departments {
         /*border: 1px solid #D8DEE7;*/
@@ -173,7 +173,7 @@
 
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .departments--service {
 

@@ -2,7 +2,7 @@
 
 }
 
-@media (768px <= width) {
+@media (740px <= width) {
 
     .smartphone-only {
         display: none !important;

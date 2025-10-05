@@ -20,7 +20,7 @@
     user-select: none;
 }
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .button {
         gap: 6px;

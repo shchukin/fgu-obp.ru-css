@@ -32,7 +32,7 @@
     }
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .event {
         padding: 24px 16px 12px;

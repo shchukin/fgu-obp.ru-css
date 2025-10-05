@@ -20,7 +20,7 @@
     }
 
     .actions-panel__action:hover {
-        color: #3575e7;
+        color: #3575E7;
     }
         .actions-panel__icon {
             margin-top: -2px;
@@ -29,7 +29,7 @@
 
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .actions-panel {
         margin-left: 0;

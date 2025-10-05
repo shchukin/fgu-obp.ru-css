@@ -86,7 +86,7 @@
 
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .wizard {
         gap: 12px;

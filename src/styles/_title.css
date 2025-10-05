@@ -9,7 +9,7 @@
     line-height: 40px;
 }
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .title--main {
         font-size: 20px;

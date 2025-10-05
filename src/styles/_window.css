@@ -45,7 +45,7 @@
 
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .window {
 
@@ -82,7 +82,7 @@
     width: var(--modal-window);
 }
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .window--auth {
         width: 100%;
@@ -99,7 +99,7 @@
         top: 34px !important;
     }
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .window--feedback {
         width: 100%;

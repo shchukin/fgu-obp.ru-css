@@ -46,7 +46,7 @@
     }
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .alert {
          padding: 42px 40px 40px;

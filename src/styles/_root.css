@@ -21,7 +21,7 @@
     --radius: 16px
 }
 
-@media (width < 768px) {
+@media (width < 740px) {
     :root {
         --container-padding: 16px;
         --radius: 12px;

@@ -33,7 +33,7 @@
 }
 
 
-@media (width < 768px) {
+@media (width < 740px) {
 
     .auth {
         padding: 32px 16px;
