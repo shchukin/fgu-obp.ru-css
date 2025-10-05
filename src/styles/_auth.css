@@ -2,6 +2,10 @@
     position: relative;
     padding: 64px 96px;
 }
+    .auth__back {
+        display: none;
+    }
+
     .auth__heading {
         margin-top: 0;
         margin-bottom: 0;
@@ -10,7 +14,7 @@
     }
 
     .auth__form {
-        margin-top: 24px;
+        margin-top: 32px;
     }
         .auth__field {
             margin-top: 16px;
@@ -22,6 +26,10 @@
             .auth__submit .button {
                 width: 100%;
             }
+
+        .auth__alternation {
+            margin-top: 25px;
+        }
 
 
 .auth__alert {
@@ -38,6 +46,32 @@
     .auth {
         padding: 32px 16px;
     }
+        .auth__back {
+            display: block;
+            margin: -10px;
+            position: relative;
+            width: 44px;
+            height: 44px;
+        }
+            .auth__back::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-color: #ECEFF3;
+                border-radius: 50%;
+            }
+
+                .auth__chevron {
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    fill: #3C3C3C;
+                }
+
         .auth__heading {
 
         }

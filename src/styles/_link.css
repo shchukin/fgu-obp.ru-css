@@ -25,6 +25,14 @@
     color: #777777;
 }
 
+.link--inverted-decoration {
+    text-decoration-color: transparent;
+}
+
+.link--inverted-decoration:hover {
+    text-decoration-color: currentColor;
+}
+
 
 .link--text-alike,
 .wysiwyg .link--text-alike {

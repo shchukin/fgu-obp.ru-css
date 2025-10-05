@@ -11,7 +11,7 @@
     border-radius: 8px;
     font-family: inherit;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 19px;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -37,6 +37,13 @@
         fill: currentColor;
     }
 
+
+.button--larger {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 18px;
+}
 
 .button:disabled,
 .button:disabled:hover,
@@ -68,7 +75,7 @@
 }
 
 .button--danger:hover {
-    background-color: #FD6767;
+    background-color: #FC6C6B;
     border-color: transparent;
 }
 

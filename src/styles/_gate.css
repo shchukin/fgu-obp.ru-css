@@ -1,0 +1,10 @@
+.gate {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.gate__inner {
+    width: 552px;
+    margin-left: auto;
+    margin-right: auto;
+}
