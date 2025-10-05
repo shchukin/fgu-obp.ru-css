@@ -46,6 +46,15 @@
 
 
 
+.button--danger {
+    background-color: #F55453;
+    border-color: transparent;
+}
+
+.button--danger:hover {
+    background-color: #FD6767;
+    border-color: transparent;
+}
 
 
 @keyframes button-loading-spin {

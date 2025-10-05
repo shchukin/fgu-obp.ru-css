@@ -1,0 +1,125 @@
+.entries {
+
+}
+    .entries__head {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 24px 40px;
+    }
+        .entries__icon {
+            vertical-align: top;
+        }
+
+        .entries__heading {
+            font-family: inherit;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .entries__action {
+            margin-left: auto;
+        }
+
+    .entries__body {
+        border-top: 1px solid #D8DEE7;
+    }
+        .entries__appointments-row {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            padding: 16px 24px;
+        }
+            .entries__summary {
+                width: 180px;
+                flex-shrink: 0;
+            }
+                .entries__date-time {
+                    font-size: 16px;
+                    line-height: 19px;
+                    white-space: nowrap;
+                }
+
+                .entries__status {
+                    margin-top: 8px;
+                }
+
+            .entries__name {
+                flex-grow: 1;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            .entries__details {
+                width: 200px;
+                flex-shrink: 0;
+            }
+                .entries__branch {
+                    font-size: 16px;
+                    line-height: 19px;
+                    white-space: nowrap;
+                }
+
+                .entries__room {
+                    margin-top: 8px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #90A2AB;
+                }
+
+            .entries__operations {
+                flex-shrink: 0;
+            }
+
+        .entries__more {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 12px;
+            padding-bottom: 30px;
+        }
+
+
+        .entries__pass-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 26px;
+            padding: 18px 24px 28px;
+        }
+            .entries__arrival {
+                display: flex;
+                align-items: center;
+                gap: 26px;
+            }
+                .entries__arrival-date-and-time {
+
+                }
+                    .entries__arrival-date {
+                        display: block;
+                    }
+
+                    .entries__arrival-time {
+                        margin-top: 8px;
+                        display: block;
+                    }
+
+                .entries__license {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+            .entries__expiration {
+                font-size: 14px;
+                line-height: 17px;
+                color: #8D8D8D;
+                text-align: center;
+            }
+
+            .entries__pass-status {
+                text-align: center;
+            }
+
+            .entries__download {
+                flex-shrink: 0;
+            }
