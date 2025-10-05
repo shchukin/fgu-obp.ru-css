@@ -1,0 +1,39 @@
+.footer {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-color: #FFFFFF;
+}
+    .footer__wrap {
+
+    }
+        .footer__summary {
+            max-width: 581px;
+            padding-bottom: 2px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+        .footer__link {
+            margin-top: 8px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+
+
+@media (width < 768px) {
+
+    .footer {
+        padding-bottom: 74px;
+    }
+        .footer__wrap {
+
+        }
+            .footer__summary {
+
+            }
+
+            .footer__link {
+
+            }
+}
