@@ -61,11 +61,11 @@
 
 }
     .departments__item:hover {
-        color: #3575e7;
+        color: #3575E7;
     }
 
     .departments__item:hover .departments__icon {
-        stroke: #3575e7;
+        stroke: #3575E7;
     }
 
     .departments__item:hover::after {
@@ -138,11 +138,11 @@
 
     }
         .departments__item:hover {
-            /*color: #3575e7;*/
+            /*color: #3575E7;*/
         }
 
         .departments__item:hover .departments__icon {
-            /*stroke: #3575e7;*/
+            /*stroke: #3575E7;*/
         }
 
         .departments__item:hover::after {
@@ -164,7 +164,7 @@
     }
 
     .departments--service .departments__item:hover {
-        color: #3575e7;
+        color: #3575E7;
     }
 
     .departments--service .departments__item::before {
@@ -187,7 +187,7 @@
         }
 
         .departments--service .departments__item:hover {
-            /*color: #3575e7;*/
+            /*color: #3575E7;*/
         }
 
         .departments--service .departments__item::before {

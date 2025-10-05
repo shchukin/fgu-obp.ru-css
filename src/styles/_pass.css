@@ -105,31 +105,23 @@
                     width: 20px;
                     height: 20px;
                 }
-        
-        
-        
+
+
+
 @media (width < 740px) {
-    
+
     .pass {
         padding: 24px 16px;
-        /*display: flex;*/
-        /*flex-direction: column;*/
         gap: 16px;
     }
 
     .pass + .pass {
-        /*margin-top: 24px;*/
+
     }
         .pass__head {
             display: block;
-            /*align-items: center;*/
-            /*justify-content: space-between;*/
-            /*gap: 40px;*/
         }
             .pass__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-weight: normal;*/
                 font-size: 24px;
                 line-height: 40px;
             }
@@ -138,14 +130,10 @@
                 margin-top: 8px;
                 font-size: 14px;
                 line-height: 17px;
-                /*color: #90A2AB;*/
             }
 
         .pass__data {
             margin-top: 12px;
-            /*display: flex;*/
-            /*flex-direction: column;*/
-            /*align-items: stretch;*/
             gap: 4px;
         }
             .pass__row {
@@ -164,28 +152,20 @@
 
             }
                 .pass__param {
-                    /*font-size: 16px;*/
-                    /*line-height: 19px;*/
-                    /*color: #5B5B5B;*/
+
                 }
 
                 .pass__row--highlighted .pass__param {
-                    /*font-size: 18px;*/
-                    /*line-height: 22px;*/
-                    /*color: #000000;*/
+
                 }
 
 
                 .pass__row:not(.pass__row--status) .pass__value {
                     margin-top: 8px;
-                    /*font-size: 16px;*/
-                    /*line-height: 19px;*/
-                    /*color: #000000;*/
                 }
 
                 .pass__row--highlighted .pass__param {
-                    /*font-size: 18px;*/
-                    /*line-height: 22px;*/
+
                 }
 
                 .pass__value .badge {
@@ -201,13 +181,10 @@
             .pass__issued {
                 font-size: 14px;
                 line-height: 17px;
-                /*color: #90A2AB;*/
             }
 
             .pass__download {
                 margin-top: 0;
-                /*width: fit-content;*/
-                /*margin-left: auto;*/
             }
                 .pass__download .button {
                     border-radius: 4px;

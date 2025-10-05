@@ -56,9 +56,9 @@
             }
 
             .carousel__button:hover .carousel__chevron {
-                fill: #3575e7;
+                fill: #3575E7;
             }
-            
+
             .carousel__button--disabled .carousel__chevron {
                 fill: #90A2AB;
             }
