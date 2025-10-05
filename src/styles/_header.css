@@ -38,6 +38,7 @@
                     margin-top: 4px;
                     font-size: 20px;
                     line-height: 20px;
+                    color: #0D49B4;
                     text-align: center;
                 }
 
@@ -51,6 +52,10 @@
                 line-height: 17px;
                 color: #8C9EA3;
                 text-decoration: none;
+            }
+
+            .header__accessibility:hover {
+                color: #3575e7;
             }
                 .header__eye {
                     position: absolute;

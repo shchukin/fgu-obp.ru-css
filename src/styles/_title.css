@@ -1,0 +1,18 @@
+.title {
+    font-family: var(--font-heading);
+    font-weight: normal;
+}
+
+
+.title--main {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@media (width < 768px) {
+
+    .title--main {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

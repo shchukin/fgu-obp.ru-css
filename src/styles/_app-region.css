@@ -1,5 +1,7 @@
 .app-region {
-
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 24px rgba(196, 206, 211, .48);
+    border-radius: 16px
 }
 
 @media (width < 768px) {

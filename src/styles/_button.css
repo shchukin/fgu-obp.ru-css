@@ -1,8 +1,45 @@
 .button {
+    vertical-align: top;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
+    border: 1px solid #0d49b4;
+    padding: 9px 24px 8px;
+    min-width: 100px;
+    background-color: #0d49b4;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (width < 768px) {
+
+    .button {
+        gap: 6px;
+    }
+}
+    .button__icon {
+        margin-top: -2px;
+        flex-shrink: 0;
+        vertical-align: top;
+        fill: currentColor;
+    }
+
+
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+    color: #000000;
 }
 
 .button--outline {
@@ -11,38 +48,12 @@
     color: #0D49B4;
 }
 
-.button--smaller-polina-variant {
-    padding: 9px 24px 8px;
-}
-
 .button--outline:hover,
 .button--outline:focus {
     background: #3575e7;
     border-color: #3575e7;
     color: #FFFFFF;
 }
-
-.button__icon {
-    margin-top: -2px;
-    flex-shrink: 0;
-    vertical-align: top;
-    fill: currentColor;
-}
-
-
-/* Странно, что этот стиль не прописан глобально. Делаю это хотя бы в личном кабинете: */
-.profile .button {
-    white-space: nowrap;
-}
-
-
-@media (width < 768px) {
-
-    .button {
-        gap: 6px;
-    }
-}
-
 
 
 
@@ -57,18 +68,15 @@
 }
 
 
+
 @keyframes button-loading-spin {
     100% { transform: rotate(360deg); }
 }
 
 .button--loading {
     position: relative;
-    color: transparent;
-    pointer-events: none;
-}
-
-.button--loading:disabled {
     color: transparent !important;
+    pointer-events: none;
 }
     .button--loading::after {
         content: "";

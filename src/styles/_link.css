@@ -8,12 +8,11 @@
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    color: #1B73E8;
+    color: #0D49B4;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.25em;
     cursor: pointer;
-    transition: text-decoration-color var(--transition-hover);
 }
 
 .link:hover,

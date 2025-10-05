@@ -389,7 +389,7 @@ body {
     }
 }
 
-.title-h1 {
+.title--main {
     color: #000;
     font-family: HeliosCond, sans-serif;
     font-style: normal;
@@ -399,14 +399,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .title-h1 {
+    .title--main {
         font-weight: 400;
         font-size: 32px;
         line-height: 40px
     }
 }
 
-h1.title-h1 {
+h1.title--main {
     margin: 0
 }
 
