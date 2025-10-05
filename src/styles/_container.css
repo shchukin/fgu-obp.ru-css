@@ -1,6 +1,5 @@
 .container {
-    box-sizing: content-box;
-    width: 1180px;
+    width: calc(1180px + 2 * var(--container-padding));
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
     margin-left: auto;
