@@ -2,9 +2,21 @@
     padding-top: 96px;
     padding-bottom: 96px;
 }
+    .gate__inner {
+        width: 552px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.gate__inner {
-    width: 552px;
-    margin-left: auto;
-    margin-right: auto;
+
+@media (width < 768px) {
+
+    .gate {
+        max-width: 100%; /* из-за родительского флекса */
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+        .gate__inner {
+            width: auto;
+        }
 }
