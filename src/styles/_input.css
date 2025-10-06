@@ -68,15 +68,15 @@
 
 
 /* Disabled */
-.input__widget:read-only,
-.input__widget:read-only:hover {
+.input__widget:not(select):read-only,
+.input__widget:not(select):read-only:hover {
     border-color: transparent;
     background-color: #EBF1F3;
     color: #024593;
     cursor: default;
 }
 
-.input__widget:read-only::placeholder {
+.input__widget:not(select):read-only::placeholder {
     color: #024593;
 }
 
@@ -102,8 +102,8 @@
 /* stylelint-disable */
 textarea.input__widget {
     height: auto; /* user rows="" attribute to set a default height */
-    min-height: 50px; /* 1 row */
-    max-height: calc(10*24px + 2*11px + 2*2px); /* rows + vertical paddings + vertical borders */
+    min-height: 52px; /* 1 row */
+    max-height: calc(10*19px + 2*1px + 16px + 15px); /* rows + vertical paddings + vertical borders */
     resize: vertical;
 }
 /* stylelint-enable */
